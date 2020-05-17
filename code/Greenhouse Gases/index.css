@@ -30,19 +30,28 @@ header, main, footer {
 
 header {
   line-height: 1.2;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-style: normal;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: var(--spacing) 0 0 0;
+  padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
+  margin: var(--spacing) 0 var(--spacing) 0;
 }
 
 header h1 {
   color: var(--color-white);
   background: var(--color-accent);
-  padding: calc(var(--spacing) / 2) calc(var(--spacing) * 2) calc(var(--spacing) / 2) calc(var(--spacing));
+  position: absolute;
+  width: 100%;
+  height: 13vh;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px 0px 20px 20px;
+  margin: 0 0 0 0;
+  padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
 }
+
 
 main {
   display: flex;
@@ -53,8 +62,8 @@ main {
 
 section {
   width: 100%;
-  max-width: 768px;
-  padding: var(--spacing) var(--spacing) 0 var(--spacing);
+  max-width: 500px;
+  padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
   hyphens: auto;
   display: flex;
   flex-direction: column;
