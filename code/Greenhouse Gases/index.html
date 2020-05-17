@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Greenhouse Gases</title>
+  <script src="../assets/js/vue.js"></script>
+  <script src="../assets/js/scrollama.min.js"></script>
+  <script src="../assets/js/d3.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>Origin of<br>Greenhouse Gases</h1>
+    </header>
+    <main>
+      <section class="intro">
+        <p>
+          Every gas has a different origin and source. It is important to know,
+          where the gases come from, in order to reduce them directly at the
+          source.
+        </p>
+      </section>
+      <section class="scrolly">
+        <figure ref="figure">
+          <img v-if="step === 0" src="../assets/images/Frame 1.svg"/>
+          <img v-if="step === 1" src="../assets/images/Frame 2.svg"/>
+          <img v-if="step === 2" src="../assets/images/Frame 3.svg"/>
+          <img v-if="step === 3" src="../assets/images/Frame 4.svg"/>
+        </figure>
+        <article>
+          <div class="step" data-step="0">
+            <p>
+              <strong>Carbon dioxide</strong>
+               is largely produced by the burning of fossil fuels such
+              as coal, oil and gas, for example for power generation, in industry,
+              domestic heating systems and in road traffic. In addition, as a result
+              of deforestation, CO2 is released by the decomposition of biomass during
+              the burning of mainly tropical forests. Lignite-fired power plants emit
+              about 20 percent of the total German CO2 emissions.
+            </p>
+          </div>
+          <div class="step" data-step="1">
+            <p>
+              <strong>Methane</strong>
+               is always produced when organic material is decomposed in the
+              absence of oxygen; this occurs mainly in the stomachs of ruminants
+              (cows and sheep), in wet rice cultivation and in landfills. For
+              example, a cow produces about 150 to 250 litres of methane.
+            </p>
+          </div>
+          <div class="step" data-step="2">
+            <p>
+              <strong>Laughing gas</strong>
+               is produced in the soil during the decomposition of
+              mineral nitrogen fertilizers. It is the most important greenhouse
+              gas released by agriculture worldwide. The use of land and fertilizers
+              leads to a significant release of CO2 and nitrous oxide.
+            </p>
+          </div>
+          <div class="step" data-step="3">
+            <p>
+              <strong>F-Gases</strong>
+               are mainly used as propellants and refrigerants,
+              their use has been greatly reduced since 1990 as they contribute
+              to the destruction of the ozone layer; the fluorocarbons (HFCs)
+              used as substitutes do not damage the ozone layer - but
+              they are also greenhouse gases.
+            </p>
+          </div>
+        </article>
+      </section>
+    
+    </main>
+    <footer>
+    </footer>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
