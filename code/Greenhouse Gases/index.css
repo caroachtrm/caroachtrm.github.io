@@ -1,13 +1,18 @@
 :root {
   --spacing: 2rem;
   --color-white: #fff;
-  --color-black: #120C25;
+  --color-black: #202020;
   --color-accent: #00C7A5;
+  --color-accent2: #A6A6A6;
+  --color-co2: #00C7A5;
+  --color-ch4: #8D75F3;
+  --color-n2o: #6CBAFA;
+  --color-fgas: #FBC800;
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
-  margin: 0;
+  // margin: 0;
   padding: 0;
 }
 
@@ -34,44 +39,41 @@ header {
   height: 20vh;
   left: 0px;
   top: 0px;
-  background: var(--color-accent);
+  background: var(--color-black);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
-  margin: 0 0 var(--spacing) 0;
+  margin: 0 0 0 0;
   border-radius: 0px 0px 20px 20px;
 }
 
-h1 {
+h-1 {
   position: absolute;
   width: auto;
   height: auto;
   left: auto;
   top: 5vh;
-  font-family: "RobotoMono-Medium";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 58px;
+  font-family: "RobotoMono-bold";
+  font-size: 2em;
   text-align: center;
   color: var(--color-white);
   padding-bottom: 5vh;
 }
 
-h5 {
+h-2 {
   color: var(--color-white);
   position: absolute;
   width: auto;
   height: auto;
   left: auto;
-  top: 5vh;
+  top: 13vh;
   font-family: "RobotoMono-Medium";
-  font-style: normal;
+  font-size: 1em;
+  font-style:normal;
   text-align: center;
   letter-spacing: 0.105em;
   text-transform: uppercase;
-  padding-top: 7vh;
 }
 
 main {
@@ -82,8 +84,7 @@ main {
 }
 
 section {
-  width: 100%;
-  max-width: 500px;
+  width: auto;
   padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
   hyphens: auto;
   display: flex;
@@ -93,23 +94,64 @@ section {
 }
 
 section.intro {
-  margin: 40vh var(--spacing) 0 var(--spacing);
+  margin: 30vh var(--spacing) 0 var(--spacing);
   padding: 0 0 0 0;
   font-family: "Roboto-Regular";
   display: flex;
-  flex-direction: horizontal;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxtext {
+  height: auto;
+  width: auto;
+  max-width: 50vw;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .square {
-  height: 190px;
-  width: 6px;
-  background-color: #00C7A5;
+  height: 120px;
+  width: 20px;
+  margin: 0 2vw 0 1vw;
+  background-color: var(--color-black);
+}
+
+.list-gases {
+  height: auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.list-gases-part {
+  height: auto;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh 2vw 0 2vw;
+}
+
+.text-list {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
 }
 
 section.scrolly {
-  padding: 0 0 0 0;
+  //padding: 0 0 0 0;
+  width: auto;
+  max-width: 50vw;
 }
 
 .outro {
@@ -130,11 +172,30 @@ p {
   font-family: "Roboto-Regular";
 }
 
-p2 {
+p-2 {
   font-family: "Roboto-Regular";
   font-style: italic;
-  color: var(--color-accent);
+  color: var(--color-accent2);
   padding-top: 2vh;
+  padding-left: 3vw;
+}
+
+p-titel {
+  font-family: "RobotoMono-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: auto;
+  text-align: center;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  //background-color: var(--color-co2);
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2vh;
 }
 
 article {

@@ -17,23 +17,69 @@
 <body>
   <div id="app">
     <header>
-      <h1>Leaking anthropogenic Greenhouse Gases Data</h1>
-      <h5>Profiles & worldwide comparison</h5>
+      <h-1>Leaking anthropogenic Greenhouse Gases Data</h-1>
+      <h-2>Profiles & worldwide comparison</h-2>
     </header>
     <main>
       <section class="intro">
-        <div class="square"></div>
-        <p>
-          Greenhouse gases, most importantly Carbon dioxide (CO₂), Methan (CH₄),
-          Laughing gas (N₂0) and F-Gases (PFC, NF3, SF6), are gases in the Earth's
-          atmosphere that are responsible for global warming. To masure the climate
-          impact, or more precisely the climate damage of these greenhouse gases,
-          gases can be converted into CO₂ equivalents (CO₂eq).
-        </p>
-        <p2><italic>What greenhouse gases do we produce? How damaging are they?
-      Scroll down to see the answers!</italic>
-        </p2>
+        <div class="boxtext">
+          <div class="square"></div>
+          <p>
+            Greenhouse gases, most importantly Carbon dioxide (CO₂), Methane (CH₄),
+            Laughing gas (N₂0) and F-Gases (PFC, NF3, SF6), are gases in the Earth's
+            atmosphere that are responsible for global warming. To masure the climate
+            impact, or more precisely the climate damage of these greenhouse gases,
+            gases can be converted into CO₂ equivalents (CO₂eq).
+          </p>
+        </div>
+        <p-2><italic>What greenhouse gases do we produce? How damaging are they?
+        Scroll down to see the answers!</italic>
+        </p-2>
+        <div class="list-gases">
+          <div class="list-gases-part">
+            <span class="dot" style="background-color: var(--color-co2)"></span>
+            <p-titel style="color: var(--color-co2)"> Carbon dioxide </p-titel>
+            <p>CO₂</p>
+            <div class="square" style="width:2px;margin: 0 0 0 0;"></div>
+          </div>
+          <div class="list-gases-part">
+            <span class="dot" style="background-color: var(--color-ch4)"></span>
+            <p-titel style="color: var(--color-ch4)"> Methane </p-titel>
+            <p>CH₄</p>
+            <div class="square" style="width:2px;margin: 0 0 0 0;"></div>
+          </div>
+          <div class="list-gases-part">
+            <span class="dot" style="background-color: var(--color-n2o)"></span>
+            <p-titel style="color: var(--color-n2o)"> Nitrous Oxide </p-titel>
+            <p>N₂0</p>
+            <div class="square" style="width:2px;margin: 0 0 0 0;"></div>
+          </div>
+          <div class="list-gases-part">
+            <span class="dot" style="background-color: var(--color-fgas)"></span>
+            <p-titel style="color: var(--color-fgas)"> F-Gases </p-titel>
+            <p>PFC, NF4, SF4</p>
+            <div class="square" style="width:2px;margin: 0 0 0 0;"></div>
+          </div>
+        </div>
+        <div class="text-list">
+          <p-titel style="color: var(--color-black); text-align:left;padding-left: 3vw; "> How damaging are the greenhouse gases? </p-titel>
+          <div class="boxtext">
+            <div class="square" style="background-color: var(--color-ch4)"></div>
+            <p>
+              In order to make the effects of the various greenhouse gases on the climate comparable,
+              the United Nations Intergovernmental Panel on Climate Change (IPCC) has defined
+              the so-called Global Warming Potential (GWP). The GWP expresses the warming
+              effect of a certain amount of the respective greenhouse gas over a defined
+              period of time (100 years) compared to that of CO₂.
+            </p>
+          </div>
+          <p-2 style="color: var(--color-ch4)"> <italic> <strong style="color: #8D75F3">
+            One Example:</strong> Methane has 28 times more climate impact
+          than Carbon Dioxide. </italic>
+        </p-2>
+        </div>
       </section>
+
       <section class="scrolly">
         <figure ref="figure">
           <img v-if="step === 0" src="../assets/images/Frame 1.svg"/>
