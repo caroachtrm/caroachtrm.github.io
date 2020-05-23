@@ -79,4 +79,6 @@ const app = new Vue({
       this.step = step.index
     }
   }
+
+
 })

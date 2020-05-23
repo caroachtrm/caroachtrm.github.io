@@ -21,7 +21,7 @@
       <h-2>Profiles & worldwide comparison</h-2>
     </header>
     <main>
-      <section class="intro">
+    <section class="intro">
         <div class="boxtext">
           <div class="square"></div>
           <p>
@@ -35,34 +35,40 @@
         <p-2><italic>What greenhouse gases do we produce? How damaging are they?
         Scroll down to see the answers!</italic>
         </p-2>
-        <div class="list-gases">
-          <div class="list-gases-part">
-            <span class="dot" style="background-color: var(--color-co2)"></span>
-            <p-titel style="color: var(--color-co2)"> Carbon dioxide </p-titel>
+
+        <div class="stickyheader">
+          <div class="list-row" style="margin-bottom: 3vh">
+            <div class="list-part" style="margin: 4vh 0 0 0;"><p-titel style="color: var(--color-co2)"> Carbon dioxide </p-titel></div>
+            <div class="list-part" style="margin: 4vh 0 0 0;"><p-titel style="color: var(--color-ch4)"> Methane </p-titel></div>
+            <div class="list-part" style="margin: 4vh 0 0 0;"><p-titel style="color: var(--color-n2o)"> Nitrous Oxide </p-titel></div>
+            <div class="list-part" style="margin: 4vh 0 0 0;"><p-titel style="color: var(--color-fgas)"> F-Gases </p-titel></div>
+          </div>
+        </div>
+
+        <div class="list-row">
+          <div class="list-part">
             <p>CO₂</p>
+            <span class="dot" style="background-color: var(--color-co2)"></span>
             <div class="square" style="width:2px;margin: 0 0 0 0;"></div>
           </div>
-          <div class="list-gases-part">
-            <span class="dot" style="background-color: var(--color-ch4)"></span>
-            <p-titel style="color: var(--color-ch4)"> Methane </p-titel>
+          <div class="list-part">
             <p>CH₄</p>
+            <span class="dot" style="background-color: var(--color-ch4)"></span>
             <div class="square" style="width:2px;margin: 0 0 0 0;"></div>
           </div>
-          <div class="list-gases-part">
-            <span class="dot" style="background-color: var(--color-n2o)"></span>
-            <p-titel style="color: var(--color-n2o)"> Nitrous Oxide </p-titel>
+          <div class="list-part">
             <p>N₂0</p>
+            <span class="dot" style="background-color: var(--color-n2o)"></span>
             <div class="square" style="width:2px;margin: 0 0 0 0;"></div>
           </div>
-          <div class="list-gases-part">
-            <span class="dot" style="background-color: var(--color-fgas)"></span>
-            <p-titel style="color: var(--color-fgas)"> F-Gases </p-titel>
+          <div class="list-part">
             <p>PFC, NF4, SF4</p>
+            <span class="dot" style="background-color: var(--color-fgas)"></span>
             <div class="square" style="width:2px;margin: 0 0 0 0;"></div>
           </div>
         </div>
-        <div class="text-list">
-          <p-titel style="color: var(--color-black); text-align:left;padding-left: 3vw; "> How damaging are the greenhouse gases? </p-titel>
+        <div class="text-list" style="width: auto">
+          <p-titel style="color: var(--color-black); text-align:left;padding-left: 2.5vw; "> How damaging are the greenhouse gases? </p-titel>
           <div class="boxtext">
             <div class="square"></div>
             <p>
@@ -73,7 +79,7 @@
               period of time (100 years) compared to that of CO₂.
             </p>
           </div>
-          <p-2 style="color: var(--color-ch4)"> <italic> <strong style="color: #8D75F3">
+          <p-2 style="color: var(--color-ch4); padding-left: 2.5vw;"> <italic> <strong style="color: #8D75F3">
             One Example:</strong> Methane has 28 times more climate impact
           than Carbon Dioxide. </italic>
         </p-2>
@@ -81,17 +87,46 @@
         <div class="typewriter">
           <p-typewriter>10ppm Methane x 28 CO₂eq = 280 ppm CO₂eq</p-typewriter>
         </div>
-        <div class="color-box" style="width: 70vw; background-color: #E0F8F4">
-          <p> The climate impact of carbon dioxide serves as a benchmark,
+        <div class="boxtext">
+          <div class="square" style="background-color: var(--color-co2); height:80px; width: 12px"></div>
+          <p>
+            The climate impact of carbon dioxide serves as a benchmark,
             while the other greenhouse gases are related to each other according to
             their specific effectiveness in particles per million particles (part per million, ppm)
-            of CO₂.The climate impact of carbon dioxide serves as a benchmark, while the
-            other greenhouse gases are related to each other according to their specific
-            effectiveness in particles per million particles (part per million, ppm) of CO₂. </p>
+            of CO₂.
+          </p>
         </div>
-      </section>
+        <div class="list-row" style="margin-top:5vh;">
+          <div class="list-part">
+            <span class="dot" style="background-color: var(--color-co2)"></span>
+          </div>
+          <div class="list-part">
+            <span class="dot" style="background-color: var(--color-ch4)"></span>
+          </div>
+          <div class="list-part">
+            <span class="dot" style="background-color: var(--color-n2o)"></span>
+          </div>
+          <div class="list-part">
+            <span class="dot" style="background-color: var(--color-fgas)"></span>
+          </div>
+        </div>
+        <p-2 style="padding-left:0"> <italic> Scroll down to see how CO₂-equivalents measure climate impact</italic>
+      </p-2>
+      <div class="list-row" style="margin-bottom: 0;">
+        <div class="list-part"> <p> 1 CO₂eq </p> </div>
+        <div class="list-part"> <p> 28 CO₂eq </p> </div>
+        <div class="list-part"> <p> 298 CO₂eq </p> </div>
+        <div class="list-part"> <p> 12400-23500 CO₂eq </p> </div>
+      </div>
+      <div class="img-row">
+        <img style="padding: 0 1vw 0 1vw" src="../assets/images/Bobbel1.png">
+        <img style="padding: 0 1vw 0 1vw" src="../assets/images/Bobbel2.png">
+        <img style="padding: 0 1vw 0 1vw" src="../assets/images/Bobbel3.png">
+        <img style="padding: 0 1vw 0 1vw" src="../assets/images/Bobbel4.png">
+      </div>
+    </section>
 
-      <section class="scrolly">
+    <section class="scrolly">
         <figure ref="figure">
           <img v-if="step === 0" src="../assets/images/Frame 1.svg"/>
           <img v-if="step === 1" src="../assets/images/Frame 2.svg"/>
