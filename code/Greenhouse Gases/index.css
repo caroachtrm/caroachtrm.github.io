@@ -136,7 +136,7 @@ main {
 }
 
 section {
-  width: auto;
+  width: 100vw;
   //padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
   display: flex;
   flex-direction: column;
@@ -145,7 +145,7 @@ section {
 }
 
 section.intro {
-  margin: 30vh var(--spacing) 0 var(--spacing);
+  margin: 30vh 0 0 0;
   padding: 0 0 0 0;
   font-family: "Roboto-Regular";
   display: flex;
@@ -216,6 +216,15 @@ section.scrolly {
   max-width: 50vw;
 }
 
+.scrolly{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .outro {
   padding-bottom: var(--spacing);
 }
@@ -244,6 +253,7 @@ section.scrolly {
     typing 3s steps(30, end),
     blink-caret 1s step-end infinite;
   display: inline-block;
+  animation-delay: 10s;
 }
 
 /* The typing effect */
@@ -260,7 +270,7 @@ section.scrolly {
 
 .img-row{
   height: auto;
-  width: auto;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -300,13 +310,17 @@ article {
 }
 
 figure {
-  background-color: rgb(217, 217, 217);
+  //background-color: var(--color-white);
   position: -webkit-sticky;
   position: sticky;
   width: auto;
   height: 100vh;
   margin: 0;
   top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -316,6 +330,7 @@ figure svg {
   /* position: absolute; */
   top: 0;
 }
+
 
 .scrollama__debug-offset {
   border-color: var(--color-accent) !important;

@@ -11,7 +11,7 @@ const app = new Vue({
   mounted () {
     this.scroller.setup({
       step: '.scrolly article .step',
-      offset: 1.5,
+      offset: 1,
       progress: true,
       debug: true
     }).onStepEnter(this.onEnter)
