@@ -199,6 +199,16 @@ section.intro {
   margin-top: 5vh;
 }
 
+.text-data{
+  height: auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  text-align:left;
+  align-items: center;
+}
+
 .color-box {
   height: auto;
   width: auto;
@@ -268,13 +278,14 @@ section.scrolly {
   50% { border-color: var(--color-ch4) }
 }
 
+
 .img-row{
   height: auto;
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 article {
