@@ -119,15 +119,15 @@
         <div class="list-part"> <p> 12400-23500 CO₂eq </p> </div>
       </div>
       <div class="img-row">
-        <img style="padding: 0 1vw 0 1vw" src="../assets/images/Bobbel1.png">
-        <img style="padding: 0 1vw 0 1vw" src="../assets/images/Bobbel2.png">
-        <img style="padding: 0 1vw 0 1vw" src="../assets/images/Bobbel3.png">
-        <img style="padding: 0 1vw 0 1vw" src="../assets/images/Bobbel4.png">
+        <img style="padding: 0 0 0 1vw" src="../assets/images/Bobbel1.png">
+        <img style="padding: 0 1vw 0 0" src="../assets/images/Bobbel2.png">
+        <img style="padding: 0 1vw 0 0" src="../assets/images/Bobbel3.png">
+        <img style="padding: 0 1vw 0 0" src="../assets/images/Bobbel4.png">
       </div>
 
       <div class="scrolly">
         <figure ref="figure">
-          <div class="text-list" style="width: auto; margin-top:10vh;">
+          <div class="text-list" style="width: auto; margin-top:15vh;">
             <p-titel style="text-align:left; padding-left:2.5vw;"> The importance of dwell time </p-titel>
             <div class="boxtext">
               <div class="square" style="height:100px;"></div>
@@ -169,28 +169,69 @@
           </div>
         </article>
       </div>
-      <div class="text-data">
-        <p-titel style="margin-left: -20vw; text-align:left;"> Percentage of greenhouse gases <br> in our atmosphere </p-titel>
-        <img style="position:absolute; margin-top:15vh;" src="../assets/images/percentage all.png">
-          <div class="img-row" style="margin-top: 30vw;">
-            <img style="margin:0 0 0 3vw;" src="../assets/images/co2-img.png">
-            <img style="margin:0 5vw 0 5vw;" src="../assets/images/ch4-img.png">
-            <img style="margin:0 5vw 0 10vw;" src="../assets/images/n2o-img.png">
-            <img style="margin:0 6vw 0 8vw;" src="../assets/images/f-gas-img.png">
+
+      <div class="scrolly">
+        <figure ref="figure">
+          <div class="text-list" style="width: auto; margin-top:10vh;">
+            <p-titel style="text-align:left; padding-left:2.5vw;"> Details on the greenhouse gases</p-titel>
+            <div class="boxtext">
+              <div class="square" style="height:60px; width:11px;"></div>
+              <p>
+                While the CO₂-equivalents show how important it is, to know the
+                different climate impacts of the greenhouse gases, it is also good to know how
+                much every greenhouse gase takes part in the whole.
+              </p>
+            </div>
           </div>
+          <img v-if="step === 6" src="../assets/images/percentage1.png"/>
+          <img v-if="step === 7" src="../assets/images/percentage2.png"/>
+          <img v-if="step === 8" src="../assets/images/percentage3.png"/>
+        </figure>
+        <article>
+          <div class="step" data-step="6" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="7" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="8" style="background:none; ">
+            <p></p>
+          </div>
+        </article>
       </div>
+
+      <div class="list-row" style="align-items: flex-start;">
+        <div class="list-part">
+          <img src="../assets/images/co2-chemie.svg"/>
+          <p>Carbon dioxide is a colourless and odourless gas. This is because it is at such a low concentration that we are accustomed to it; but if you were to increase the amount of CO2 available in the air, you would notice a sharp acidic smell and taste. CO2 is also colourless, but pure is heavier than air so if you had a leak from a CO2 gas bottle, the gas would rest at floor level if it is undisturbed. It is well soluble in water and a natural component of air, as well as a natural by-   product of the cellular respiration of many living creatures. The dwell time in the atmosphere is varying up to 1000 years. Interesting fact: During eruptions of volcanoes, a lot of CO2 is released (resulting volcanic gases). </p>
+        </div>
+        <div class="list-part">
+          <img src="../assets/images/ch4-chemie.svg"/>
+          <p>Methane is a colourless, odourless and combistible gas. It is insoluble in water and forms explosive mixtures with air. One assumes: Main component of the earthly primeval atmosphere. The average lifetime in the atmosphere is around 12.4 years, much shorter than that of CO2.
+            One assumes, that it was the main component of the earthly primeval atmosphere. It is mostly produced when organic matter rots in the absence of air in swamps or in sediment at the bottom of water bodies.</p>
+        </div>
+        <div class="list-part">
+          <img src="../assets/images/n2o-chemie.svg"/>
+          <p>Nitrous oxide, also known as laughing gas, is odourless, colourless and tasteless, although there are descriptions that describe a slightly sweet taste. With a density of 1.97 kg/m³, nitrous oxide is 1.5 times heavier than air, which means that it is not distributed homogeneously in a room, but tends to "fall" to the ground. Laughing gas is not combustible, but can oxidise other substances. It therefore has a fire- promoting effect. Laughing gas is highly soluble in cold water; under increased pressure, laughing gas shows very good solubility in fats.</p>
+        </div>
+        <div class="list-part">
+          <img src="../assets/images/fgas-chemie.svg"/>
+          <p>The term "F-gases" stands for fluorinated greenhouse gases and is a collective term for partly fluorinated hydrocarbons (HFC), perfluorinated hydrocarbon (PFC), sulphur hexafluoride (SF6) and nitrogen trifluoride (NF3). Since 2014 there is a EU Regulation concerning fluorinated greenhouse gases which will help to reduce emission levels by gradual phasing-down available HFC quantities and expansing regulations on leak tests, certifications, disposal and labelling. </p>
+        </div>
+      </div>
+
     </section>
 
     <section class="scrolly">
         <figure ref="figure">
           <p-titel style="margin-left:-40vh;"> The origin of greenhouse gases </p-titel>
-          <img v-if="step === 0" src="../assets/images/Frame 1.png"/>
-          <img v-if="step === 1" src="../assets/images/Frame 2.png"/>
-          <img v-if="step === 2" src="../assets/images/Frame 3.png"/>
-          <img v-if="step === 3" src="../assets/images/Frame 4.png"/>
+          <img v-if="step === 9" src="../assets/images/Frame 1.png"/>
+          <img v-if="step === 10" src="../assets/images/Frame 2.png"/>
+          <img v-if="step === 11" src="../assets/images/Frame 3.png"/>
+          <img v-if="step === 12" src="../assets/images/Frame 4.png"/>
         </figure>
         <article>
-          <div class="step" data-step="0">
+          <div class="step" data-step="9">
             <p style="color: var(--color-co2)">
               <strong style="color: var(--color-co2)">Carbon dioxide</strong>
                is largely produced by the burning of fossil fuels such
@@ -201,7 +242,7 @@
               about 20 percent of the total German CO2 emissions.
             </p>
           </div>
-          <div class="step" data-step="1">
+          <div class="step" data-step="10">
             <p style="color: var(--color-ch4)">
               <strong style="color: var(--color-ch4)">Methane</strong>
                is always produced when organic material is decomposed in the
@@ -210,7 +251,7 @@
               example, a cow produces about 150 to 250 litres of methane.
             </p>
           </div>
-          <div class="step" data-step="2">
+          <div class="step" data-step="11">
             <p style="color: var(--color-n2o)">
               <strong style="color: var(--color-n2o)">Laughing gas</strong>
                is produced in the soil during the decomposition of
@@ -219,7 +260,7 @@
               leads to a significant release of CO2 and nitrous oxide.
             </p>
           </div>
-          <div class="step" data-step="3">
+          <div class="step" data-step="12">
             <p style="color: var(--color-fgas)">
               <strong style="color: var(--color-fgas)">F-Gases</strong>
                are mainly used as propellants and refrigerants,
