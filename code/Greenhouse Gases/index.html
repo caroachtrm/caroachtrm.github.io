@@ -119,10 +119,31 @@
         <div class="list-part"> <p> 12400-23500 CO₂eq </p> </div>
       </div>
       <div class="img-row">
-        <img style="padding: 0 0 0 1vw" src="../assets/images/Bobbel1.png">
-        <img style="padding: 0 1vw 0 0" src="../assets/images/Bobbel2.png">
-        <img style="padding: 0 1vw 0 0" src="../assets/images/Bobbel3.png">
-        <img style="padding: 0 1vw 0 0" src="../assets/images/Bobbel4.png">
+        <img  src="../assets/images/Bobbel1.svg">
+        <img  src="../assets/images/Bobbel2.svg">
+        <img  src="../assets/images/Bobbel3.svg">
+        <img  src="../assets/images/Bobbel4.svg">
+      </div>
+
+      <div class="imgback">
+        <img src="../assets/images/bobbel_background.svg">
+        <div class="textonimg" style="align-items:flex-start;margin-top:-1200px;right: 20vw;">
+            <div class="square" style="height:140px;background-color: var(--color-fgas);padding:0 1px 0 1px;"></div>
+            <p>
+              The GWP values of the regulated F-gases used as refrigerants range up to a GWP of 12,200 for HFC-116, which is part of a refrigerant mixture. The highest GWP (22,800) of all F-gases is sulphur hexafluoride (SF6), which is not a refrigerant. Most of the F-Gases have to phase down because of their high GWP. The goal is to cut the EU’s F-Gas emission by two-thirds by 2030 compared to 2014 levels.
+            </p>
+        </div>
+        <div class="textonimg" style="margin-top:0px;">
+            <div class="square" style="height:160px;background-color: var(--color-fgas);padding:0 1px 0 1px;"></div>
+            <p>
+              Globally, the share of all fluorinated greenhouse gases - including those not used as refrigerants - in total emissions of climate-damaging gases is currently around one to two percent. That seems little at first glance. However, forecasts show that this share could rise to six to eight percent in 2050 if no countermeasures are taken. Between 1990 and 2016 alone, F-gas emissions in Germany rose by a total of 14 percent to 15.3 million tonnes of CO2 equivalents.
+            </p>
+        </div>
+        <div class="textonimg" style="margin-top:1200px;">
+            <div class="square" style="height:160px;background-color: var(--color-fgas);padding:0 1px 0 1px;"></div>
+            <p>
+              One of the disadvantages of these so-called HFOs or unsaturated fluorinated refrigerants, which are already measured in the atmosphere in ever higher concentrations, are fluorinated degradation products. Of particular concern here is the persistent trifluoroacetic acid, which is already detectable everywhere in the environment and cannot be removed by the usual methods of drinking water purification.             </p>
+        </div>
       </div>
 
       <div class="scrolly">
@@ -231,7 +252,7 @@
           <img v-if="step === 12" src="../assets/images/Frame 4.svg"/>
         </figure>
         <article>
-          <div class="step" data-step="9">
+          <div class="step" data-step="9" style="padding: 1vh 1vw 1vh 1vw;">
             <p style="color: var(--color-co2)">
               <strong style="color: var(--color-co2)">Carbon dioxide</strong>
                is largely produced by the burning of fossil fuels such
@@ -242,7 +263,7 @@
               about 20 percent of the total German CO2 emissions.
             </p>
           </div>
-          <div class="step" data-step="10">
+          <div class="step" data-step="10" style="padding: 1vh 1vw 1vh 1vw;">
             <p style="color: var(--color-ch4)">
               <strong style="color: var(--color-ch4)">Methane</strong>
                is always produced when organic material is decomposed in the
@@ -251,7 +272,7 @@
               example, a cow produces about 150 to 250 litres of methane.
             </p>
           </div>
-          <div class="step" data-step="11">
+          <div class="step" data-step="11" style="padding: 1vh 1vw 1vh 1vw;">
             <p style="color: var(--color-n2o)">
               <strong style="color: var(--color-n2o)">Laughing gas</strong>
                is produced in the soil during the decomposition of
@@ -260,7 +281,7 @@
               leads to a significant release of CO2 and nitrous oxide.
             </p>
           </div>
-          <div class="step" data-step="12">
+          <div class="step" data-step="12" style="padding: 1vh 1vw 1vh 1vw;">
             <p style="color: var(--color-fgas)">
               <strong style="color: var(--color-fgas)">F-Gases</strong>
                are mainly used as propellants and refrigerants,
@@ -272,7 +293,30 @@
           </div>
         </article>
       </section>
-
+      <section>
+        <div class="text-list" style="width: auto; margin:10vh 0 20vh 0;">
+          <p-titel style="text-align:left; padding-left:2.5vw;"> Worldwide comparison</p-titel>
+          <div class="boxtext">
+            <div class="square" style="height:60px; width:11px;"></div>
+            <p>
+              To have a better understanding of what numbers of emmission different countries have and more important, what stories are behind the numbers, we selected a few to show the anthropogenic Greenhouse Gases in context.
+            </p>
+          </div>
+        </div>
+        <div class="twoboxes">
+          <div class="text-list" style="width: 25vw; text-align:left; align-items:flex-start;margin-top:0;">
+              <div class="color-box">
+                <p-titel2> Absolute Emissions </p-titel2>
+                <p style="margin:0;">in megatons CO2eq, 2016</p>
+              </div>
+              <p-title2> China is at the top of the world economy. Does it also emit the most emissions?</p-titel2>
+              <p> From the first view, you would think that China emits way more emissions that Germany. But there is always more than one perspective on numbers like these. One option is to distribute the emissions to capita. </p>
+              <p-2 style="padding-left:0"> <italic> Scroll down to see the results</italic>
+            </p-2>
+          </div>
+          <img src="../assets/images/global1.svg"/ style="margin-left: 5vw;">
+        </div>
+      </section>
     </main>
     <footer>
     </footer>

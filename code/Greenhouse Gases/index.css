@@ -120,6 +120,15 @@ p-titel {
   margin-bottom: 1vh;
 }
 
+p-titel2 {
+  font-family: "RobotoMono-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size:18px;
+  line-height: auto;
+  text-align: center;
+}
+
 p-typewriter {
   font-family: "RobotoMono-Regular";
   font-style: normal;
@@ -214,9 +223,11 @@ section.intro {
   width: auto;
   display: flex;
   flex-direction: column;
+  align-items: baseline;
   margin-top: 5vh;
-  background-color: #EDE9FD;
-  padding: 2vh 4vw 2vh 4vw;
+  background-color: #F6F6F6;
+  padding: 2vh 2vw 2vh 2vw;
+  margin-bottom: 5vh;
   border-radius: 3px;
 }
 
@@ -282,12 +293,42 @@ section.scrolly {
 
 .img-row{
   height: auto;
-  width: 100vw;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
 }
+
+.imgback{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: flex-start;
+}
+
+.textonimg{
+  position: absolute;
+  right: 10vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1vh 2vw 1vh 2vw;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.twoboxes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5vh 5vw 5vh 5vw;
+}
+
 
 article {
   width: 100%;
@@ -301,7 +342,7 @@ article {
 .step {
   margin: 0 0 var(--spacing) 0;
   font-weight: normal;
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.8);
   padding: var(--spacing);
   width: 100%;
   margin: 20vh 0;
