@@ -114,7 +114,7 @@ p-titel {
   font-family: "RobotoMono-Bold";
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   line-height: auto;
   text-align: center;
   margin-bottom: 1vh;
@@ -124,7 +124,7 @@ p-titel2 {
   font-family: "RobotoMono-Bold";
   font-style: normal;
   font-weight: bold;
-  font-size:18px;
+  font-size:20px;
   line-height: auto;
   text-align: center;
 }
@@ -187,7 +187,6 @@ section.intro {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10vh;
 }
 
 .list-part {
