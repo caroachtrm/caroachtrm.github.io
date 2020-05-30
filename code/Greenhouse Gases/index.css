@@ -12,7 +12,7 @@
 }
 
 #app {
-  font-family: "RobotoMono-Bold", "Roboto-Medium";
+  font-family: "RobotoMono-Bold", "Roboto-Medium", "RobotoMono-Medium","Roboto-Regular";
   font-size: 100%;
   line-height: 1.5;
   font-weight: normal;
@@ -29,29 +29,50 @@ header, main, footer {
 }
 
 header {
-  line-height: 1.2;
-  font-style: normal;
-  text-align: center;
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+  left: 0px;
+  top: 0px;
+  background: var(--color-accent);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
-  margin: var(--spacing) 0 var(--spacing) 0;
-}
-
-header h1 {
-  color: var(--color-white);
-  background: var(--color-accent);
-  position: absolute;
-  width: 100%;
-  height: 13vh;
-  left: 0px;
-  top: 0px;
+  margin: 0 0 var(--spacing) 0;
   border-radius: 0px 0px 20px 20px;
-  margin: 0 0 0 0;
-  padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
 }
 
+h1 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: auto;
+  top: 5vh;
+  font-family: "RobotoMono-Medium";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 58px;
+  text-align: center;
+  color: var(--color-white);
+  padding-bottom: 5vh;
+}
+
+h5 {
+  color: var(--color-white);
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: auto;
+  top: 5vh;
+  font-family: "RobotoMono-Medium";
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  padding-top: 7vh;
+}
 
 main {
   display: flex;
@@ -69,6 +90,22 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+section.intro {
+  margin: 40vh var(--spacing) 0 var(--spacing);
+  padding: 0 0 0 0;
+  font-family: "Roboto-Regular";
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  height: 190px;
+  width: 6px;
+  background-color: #00C7A5;
 }
 
 section.scrolly {
@@ -90,7 +127,14 @@ strong {
 }
 
 p {
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Regular";
+}
+
+p2 {
+  font-family: "Roboto-Regular";
+  font-style: italic;
+  color: var(--color-accent);
+  padding-top: 2vh;
 }
 
 article {
