@@ -1,13 +1,17 @@
 :root {
   --spacing: 2rem;
-  --color-white: #fff;
-  --color-black: #120C25;
+  --color-white: #FFFFFF;
+  --color-black: #202020;
   --color-accent: #00C7A5;
+  --color-accent2: #A6A6A6;
+  --color-co2: #00C7A5;
+  --color-ch4: #8D75F3;
+  --color-n2o: #6CBAFA;
+  --color-fgas: #FBC800;
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
 }
 
@@ -28,92 +32,61 @@ header, main, footer {
   width: 100%;
 }
 
+.stickyheader{
+  position:-webkit-sticky;
+  position:sticky;
+  top:0;
+  width: 100vw;
+  background: var(--color-white);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.04);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 2vh;
+}
+
 header {
   position: absolute;
   width: 100vw;
   height: 20vh;
   left: 0px;
   top: 0px;
-  background: var(--color-accent);
+  background: var(--color-black);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
-  margin: 0 0 var(--spacing) 0;
+  margin: 0 0 0 0;
   border-radius: 0px 0px 20px 20px;
 }
 
-h1 {
+
+h-1 {
   position: absolute;
   width: auto;
   height: auto;
   left: auto;
   top: 5vh;
-  font-family: "RobotoMono-Medium";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 58px;
+  font-family: "RobotoMono-bold";
+  font-size: 2em;
   text-align: center;
   color: var(--color-white);
   padding-bottom: 5vh;
 }
 
-h5 {
+h-2 {
   color: var(--color-white);
   position: absolute;
   width: auto;
   height: auto;
   left: auto;
-  top: 5vh;
+  top: 13vh;
   font-family: "RobotoMono-Medium";
-  font-style: normal;
+  font-size: 1em;
+  font-style:normal;
   text-align: center;
   letter-spacing: 0.105em;
   text-transform: uppercase;
-  padding-top: 7vh;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-section {
-  width: 100%;
-  max-width: 500px;
-  padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
-  hyphens: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-section.intro {
-  margin: 40vh var(--spacing) 0 var(--spacing);
-  padding: 0 0 0 0;
-  font-family: "Roboto-Regular";
-  display: flex;
-  flex-direction: horizontal;
-  justify-content: center;
-  align-items: center;
-}
-
-.square {
-  height: 190px;
-  width: 6px;
-  background-color: #00C7A5;
-}
-
-section.scrolly {
-  padding: 0 0 0 0;
-}
-
-.outro {
-  padding-bottom: var(--spacing);
 }
 
 h1 {
@@ -130,12 +103,231 @@ p {
   font-family: "Roboto-Regular";
 }
 
-p2 {
+p-2 {
   font-family: "Roboto-Regular";
   font-style: italic;
-  color: var(--color-accent);
+  color: var(--color-accent2);
   padding-top: 2vh;
 }
+
+p-titel {
+  font-family: "RobotoMono-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: auto;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+p-titel2 {
+  font-family: "RobotoMono-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size:20px;
+  line-height: auto;
+  text-align: center;
+}
+
+p-typewriter {
+  font-family: "RobotoMono-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: var(--color-ch4);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 100vw;
+  //padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.intro {
+  margin: 30vh 0 0 0;
+  padding: 0 0 0 0;
+  font-family: "Roboto-Regular";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxtext {
+  height: auto;
+  width: auto;
+  max-width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  height: 80px;
+  width: 20px;
+  margin: 0 2vw 0 0;
+  background-color: var(--color-black);
+}
+
+.list-row {
+  height: auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-part {
+  height: auto;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 2vw 0 2vw;
+}
+
+.text-list {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.text-data{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  text-align:left;
+  align-items: center;
+}
+
+.color-box {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 5vh;
+  background-color: #F6F6F6;
+  padding: 2vh 2vw 2vh 2vw;
+  margin-bottom: 5vh;
+  border-radius: 3px;
+}
+
+section.scrolly {
+  //padding: 0 0 0 0;
+  width: auto;
+  max-width: 50vw;
+}
+
+.scrolly{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.outro {
+  padding-bottom: var(--spacing);
+}
+
+
+.dot {
+  height: 20px;
+  width: 20px;
+  //background-color: var(--color-co2);
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2vh;
+}
+
+.typewriter {
+  color: var(--color-ch4);
+  background-color: #EDE9FD;
+  padding: 1vh 2vw 1vh 2vw;
+  font-family: "RobotoMono-Regular";
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid var(--color-ch4); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 5vh auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 15s steps(30) infinite forwards;
+    blink-caret 1s step-end infinite;
+  display: inline-block;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% { width: 0 }
+  50% { width: 45vw }
+  100% { width: 45vw }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--color-ch4) }
+}
+
+
+.img-row{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.imgback{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: flex-start;
+}
+
+.textonimg{
+  position: absolute;
+  right: 10vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1vh 2vw 1vh 2vw;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.twoboxes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5vh 5vw 5vh 5vw;
+}
+
 
 article {
   width: 100%;
@@ -149,7 +341,7 @@ article {
 .step {
   margin: 0 0 var(--spacing) 0;
   font-weight: normal;
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.8);
   padding: var(--spacing);
   width: 100%;
   margin: 20vh 0;
@@ -170,13 +362,17 @@ article {
 }
 
 figure {
-  background-color: rgb(217, 217, 217);
+  //background-color: var(--color-white);
   position: -webkit-sticky;
   position: sticky;
   width: auto;
   height: 100vh;
   margin: 0;
   top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -186,6 +382,7 @@ figure svg {
   /* position: absolute; */
   top: 0;
 }
+
 
 .scrollama__debug-offset {
   border-color: var(--color-accent) !important;

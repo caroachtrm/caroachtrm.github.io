@@ -17,34 +17,245 @@
 <body>
   <div id="app">
     <header>
-      <h1>Leaking anthropogenic Greenhouse Gases Data</h1>
-      <h5>Profiles & worldwide comparison</h5>
+      <h-1>Leaking anthropogenic Greenhouse Gases Data</h-1>
+      <h-2>Profiles & worldwide comparison</h-2>
     </header>
     <main>
-      <section class="intro">
-        <div class="square"></div>
-        <p>
-          Greenhouse gases, most importantly Carbon dioxide (CO₂), Methan (CH₄),
-          Laughing gas (N₂0) and F-Gases (PFC, NF3, SF6), are gases in the Earth's
-          atmosphere that are responsible for global warming. To masure the climate
-          impact, or more precisely the climate damage of these greenhouse gases,
-          gases can be converted into CO₂ equivalents (CO₂eq).
-        </p>
-        <p2><italic>What greenhouse gases do we produce? How damaging are they?
-      Scroll down to see the answers!</italic>
-        </p2>
-      </section>
-      <section class="scrolly">
+    <section class="intro">
+        <div class="boxtext">
+          <div class="square"></div>
+          <p>
+            Greenhouse gases, most importantly Carbon dioxide (CO₂), Methane (CH₄),
+            Laughing gas (N₂0) and F-Gases (PFC, NF3, SF6), are gases in the Earth's
+            atmosphere that are responsible for global warming. To masure the climate
+            impact, or more precisely the climate damage of these greenhouse gases,
+            gases can be converted into CO₂ equivalents (CO₂eq).
+          </p>
+        </div>
+        <p-2><italic>What greenhouse gases do we produce? How damaging are they?
+        Scroll down to see the answers!</italic>
+        </p-2>
+
+        <div class="list-row">
+          <div class="list-part">
+            <p>CO₂</p>
+            <span class="dot" style="background-color: var(--color-co2)"></span>
+            <div class="square" style="width:2px;margin: 1vh 0 0 0;"></div>
+          </div>
+          <div class="list-part">
+            <p>CH₄</p>
+            <span class="dot" style="background-color: var(--color-ch4)"></span>
+            <div class="square" style="width:2px;margin: 1vh 0 0 0;"></div>
+          </div>
+          <div class="list-part">
+            <p>N₂0</p>
+            <span class="dot" style="background-color: var(--color-n2o)"></span>
+            <div class="square" style="width:2px;margin: 1vh 0 0 0;"></div>
+          </div>
+          <div class="list-part">
+            <p>PFC, NF4, SF4</p>
+            <span class="dot" style="background-color: var(--color-fgas)"></span>
+            <div class="square" style="width:2px;margin: 1vh 0 0 0;"></div>
+          </div>
+        </div>
+
+        <div class="stickyheader" style="z-index: 200;margin-bottom: 3vh;">
+          <div class="list-row" style="margin-bottom: 3vh;">
+            <div class="list-part" style="margin: 4vh 0 0 0;"><p-titel style="color: var(--color-co2)"> Carbon dioxide </p-titel></div>
+            <div class="list-part" style="margin: 4vh 0 0 0;"><p-titel style="color: var(--color-ch4)"> Methane </p-titel></div>
+            <div class="list-part" style="margin: 4vh 0 0 0;"><p-titel style="color: var(--color-n2o)"> Nitrous Oxide </p-titel></div>
+            <div class="list-part" style="margin: 4vh 0 0 0;"><p-titel style="color: var(--color-fgas)"> F-Gases </p-titel></div>
+          </div>
+        </div>
+
+        <div class="text-list" style="width: auto">
+          <p-titel style="color: var(--color-black); text-align:left;padding-left: 2.5vw; "> How damaging are the greenhouse gases? </p-titel>
+          <div class="boxtext">
+            <div class="square"></div>
+            <p>
+              In order to make the effects of the various greenhouse gases on the climate comparable,
+              the United Nations Intergovernmental Panel on Climate Change (IPCC) has defined
+              the so-called Global Warming Potential (GWP). The GWP expresses the warming
+              effect of a certain amount of the respective greenhouse gas over a defined
+              period of time (100 years) compared to that of CO₂.
+            </p>
+          </div>
+          <p-2 style="color: var(--color-ch4); padding-left: 2.5vw;"> <italic> <strong style="color: #8D75F3">
+            One Example:</strong> Methane has 28 times more climate impact
+          than Carbon Dioxide. </italic>
+        </p-2>
+        </div>
+        <div class="typewriter">
+          <p-typewriter>10ppm Methane x 28 CO₂eq = 280 ppm CO₂eq</p-typewriter>
+        </div>
+        <div class="boxtext">
+          <div class="square" style="background-color: var(--color-co2); height:80px; width: 12px"></div>
+          <p>
+            The climate impact of carbon dioxide serves as a benchmark,
+            while the other greenhouse gases are related to each other according to
+            their specific effectiveness in particles per million particles (part per million, ppm)
+            of CO₂.
+          </p>
+        </div>
+        <div class="list-row" style="margin-top:5vh;">
+          <div class="list-part">
+            <span class="dot" style="background-color: var(--color-co2)"></span>
+          </div>
+          <div class="list-part">
+            <span class="dot" style="background-color: var(--color-ch4)"></span>
+          </div>
+          <div class="list-part">
+            <span class="dot" style="background-color: var(--color-n2o)"></span>
+          </div>
+          <div class="list-part">
+            <span class="dot" style="background-color: var(--color-fgas)"></span>
+          </div>
+        </div>
+        <p-2 style="padding-left:0"> <italic> Scroll down to see how CO₂-equivalents measure climate impact</italic>
+      </p-2>
+      <div class="list-row" style="margin-bottom: 0;">
+        <div class="list-part"> <p> 1 CO₂eq </p> </div>
+        <div class="list-part"> <p> 28 CO₂eq </p> </div>
+        <div class="list-part"> <p> 298 CO₂eq </p> </div>
+        <div class="list-part"> <p> 12400-23500 CO₂eq </p> </div>
+      </div>
+      <div class="img-row">
+        <img  src="../assets/images/Bobbel1.svg">
+        <img  src="../assets/images/Bobbel2.svg">
+        <img  src="../assets/images/Bobbel3.svg">
+        <img  src="../assets/images/Bobbel4.svg">
+      </div>
+
+      <div class="imgback">
+        <img src="../assets/images/bobbel_background.svg">
+        <div class="textonimg" style="align-items:flex-start;margin-top:-1200px;right: 20vw;">
+            <div class="square" style="height:140px;background-color: var(--color-fgas);padding:0 1px 0 1px;"></div>
+            <p>
+              The GWP values of the regulated F-gases used as refrigerants range up to a GWP of 12,200 for HFC-116, which is part of a refrigerant mixture. The highest GWP (22,800) of all F-gases is sulphur hexafluoride (SF6), which is not a refrigerant. Most of the F-Gases have to phase down because of their high GWP. The goal is to cut the EU’s F-Gas emission by two-thirds by 2030 compared to 2014 levels.
+            </p>
+        </div>
+        <div class="textonimg" style="margin-top:0px;">
+            <div class="square" style="height:160px;background-color: var(--color-fgas);padding:0 1px 0 1px;"></div>
+            <p>
+              Globally, the share of all fluorinated greenhouse gases - including those not used as refrigerants - in total emissions of climate-damaging gases is currently around one to two percent. That seems little at first glance. However, forecasts show that this share could rise to six to eight percent in 2050 if no countermeasures are taken. Between 1990 and 2016 alone, F-gas emissions in Germany rose by a total of 14 percent to 15.3 million tonnes of CO2 equivalents.
+            </p>
+        </div>
+        <div class="textonimg" style="margin-top:1200px;">
+            <div class="square" style="height:160px;background-color: var(--color-fgas);padding:0 1px 0 1px;"></div>
+            <p>
+              One of the disadvantages of these so-called HFOs or unsaturated fluorinated refrigerants, which are already measured in the atmosphere in ever higher concentrations, are fluorinated degradation products. Of particular concern here is the persistent trifluoroacetic acid, which is already detectable everywhere in the environment and cannot be removed by the usual methods of drinking water purification.             </p>
+        </div>
+      </div>
+
+      <div class="scrolly">
         <figure ref="figure">
-          <img v-if="step === 0" src="../assets/images/Frame 1.svg"/>
-          <img v-if="step === 1" src="../assets/images/Frame 2.svg"/>
-          <img v-if="step === 2" src="../assets/images/Frame 3.svg"/>
-          <img v-if="step === 3" src="../assets/images/Frame 4.svg"/>
+          <div class="text-list" style="width: auto; margin-top:15vh;">
+            <p-titel style="text-align:left; padding-left:2.5vw;"> The importance of dwell time </p-titel>
+            <div class="boxtext">
+              <div class="square" style="height:100px;"></div>
+              <p>
+                As already mentioned, the GWP expresses the warming effect of a
+                certain amount of the respective greenhouse gas over a defined
+                period of time (100 years) compared to that of CO₂. But apart
+                from that, all gases are remaining in the atmosphere for different
+                amounts of time, from months to millennia, and affect the climate
+                on very different timescales.
+              </p>
+            </div>
+          </div>
+          <img v-if="step === 0" src="../assets/images/Time1.svg"/>
+          <img v-if="step === 1" src="../assets/images/Time2.svg"/>
+          <img v-if="step === 2" src="../assets/images/Time3.svg"/>
+          <img v-if="step === 3" src="../assets/images/Time4.svg"/>
+          <img v-if="step === 4" src="../assets/images/Time5.svg"/>
+          <img v-if="step === 5" src="../assets/images/Time6.svg"/>
         </figure>
         <article>
-          <div class="step" data-step="0">
-            <p>
-              <strong>Carbon dioxide</strong>
+          <div class="step" data-step="0" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="1" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="2" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="3" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="4" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="5" style="background:none; ">
+            <p></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="scrolly">
+        <figure ref="figure">
+          <div class="text-list" style="width: auto; margin-top:10vh;">
+            <p-titel style="text-align:left; padding-left:2.5vw;"> Details on the greenhouse gases</p-titel>
+            <div class="boxtext">
+              <div class="square" style="height:60px; width:11px;"></div>
+              <p>
+                While the CO₂-equivalents show how important it is, to know the
+                different climate impacts of the greenhouse gases, it is also good to know how
+                much every greenhouse gase takes part in the whole.
+              </p>
+            </div>
+          </div>
+          <img v-if="step === 6" src="../assets/images/percentage1.svg"/>
+          <img v-if="step === 7" src="../assets/images/percentage2.svg"/>
+          <img v-if="step === 8" src="../assets/images/percentage3.svg"/>
+        </figure>
+        <article>
+          <div class="step" data-step="6" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="7" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="8" style="background:none; ">
+            <p></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="list-row" style="align-items: flex-start;">
+        <div class="list-part">
+          <img src="../assets/images/co2-chemie.svg"/>
+          <p style="padding:0 1vw 0 1vw;">Carbon dioxide is a colourless and odourless gas. This is because it is at such a low concentration that we are accustomed to it; but if you were to increase the amount of CO2 available in the air, you would notice a sharp acidic smell and taste. CO2 is also colourless, but pure is heavier than air so if you had a leak from a CO2 gas bottle, the gas would rest at floor level if it is undisturbed. It is well soluble in water and a natural component of air, as well as a natural by-   product of the cellular respiration of many living creatures. The dwell time in the atmosphere is varying up to 1000 years. Interesting fact: During eruptions of volcanoes, a lot of CO2 is released (resulting volcanic gases). </p>
+        </div>
+        <div class="list-part">
+          <img src="../assets/images/ch4-chemie.svg"/>
+          <p style="padding:0 1vw 0 1vw;">Methane is a colourless, odourless and combistible gas. It is insoluble in water and forms explosive mixtures with air. One assumes: Main component of the earthly primeval atmosphere. The average lifetime in the atmosphere is around 12.4 years, much shorter than that of CO2.
+            One assumes, that it was the main component of the earthly primeval atmosphere. It is mostly produced when organic matter rots in the absence of air in swamps or in sediment at the bottom of water bodies.</p>
+        </div>
+        <div class="list-part">
+          <img src="../assets/images/n2o-chemie.svg"/>
+          <p style="padding:0 1vw 0 1vw;">Nitrous oxide, also known as laughing gas, is odourless, colourless and tasteless, although there are descriptions that describe a slightly sweet taste. With a density of 1.97 kg/m³, nitrous oxide is 1.5 times heavier than air, which means that it is not distributed homogeneously in a room, but tends to "fall" to the ground. Laughing gas is not combustible, but can oxidise other substances. It therefore has a fire- promoting effect. Laughing gas is highly soluble in cold water; under increased pressure, laughing gas shows very good solubility in fats.</p>
+        </div>
+        <div class="list-part">
+          <img src="../assets/images/fgas-chemie.svg"/>
+          <p style="padding:0 1vw 0 1vw;">The term "F-gases" stands for fluorinated greenhouse gases and is a collective term for partly fluorinated hydrocarbons (HFC), perfluorinated hydrocarbon (PFC), sulphur hexafluoride (SF6) and nitrogen trifluoride (NF3). Since 2014 there is a EU Regulation concerning fluorinated greenhouse gases which will help to reduce emission levels by gradual phasing-down available HFC quantities and expansing regulations on leak tests, certifications, disposal and labelling. </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="scrolly">
+        <figure ref="figure">
+          <p-titel style="margin-left:-40vh;"> The origin of greenhouse gases </p-titel>
+          <img v-if="step === 9" src="../assets/images/Frame 1.svg"/>
+          <img v-if="step === 10" src="../assets/images/Frame 2.svg"/>
+          <img v-if="step === 11" src="../assets/images/Frame 3.svg"/>
+          <img v-if="step === 12" src="../assets/images/Frame 4.svg"/>
+        </figure>
+        <article>
+          <div class="step" data-step="9" style="padding: 1vh 1vw 1vh 1vw;">
+            <p style="color: var(--color-co2)">
+              <strong style="color: var(--color-co2)">Carbon dioxide</strong>
                is largely produced by the burning of fossil fuels such
               as coal, oil and gas, for example for power generation, in industry,
               domestic heating systems and in road traffic. In addition, as a result
@@ -53,27 +264,27 @@
               about 20 percent of the total German CO2 emissions.
             </p>
           </div>
-          <div class="step" data-step="1">
-            <p>
-              <strong>Methane</strong>
+          <div class="step" data-step="10" style="padding: 1vh 1vw 1vh 1vw;">
+            <p style="color: var(--color-ch4)">
+              <strong style="color: var(--color-ch4)">Methane</strong>
                is always produced when organic material is decomposed in the
               absence of oxygen; this occurs mainly in the stomachs of ruminants
               (cows and sheep), in wet rice cultivation and in landfills. For
               example, a cow produces about 150 to 250 litres of methane.
             </p>
           </div>
-          <div class="step" data-step="2">
-            <p>
-              <strong>Laughing gas</strong>
+          <div class="step" data-step="11" style="padding: 1vh 1vw 1vh 1vw;">
+            <p style="color: var(--color-n2o)">
+              <strong style="color: var(--color-n2o)">Laughing gas</strong>
                is produced in the soil during the decomposition of
               mineral nitrogen fertilizers. It is the most important greenhouse
               gas released by agriculture worldwide. The use of land and fertilizers
               leads to a significant release of CO2 and nitrous oxide.
             </p>
           </div>
-          <div class="step" data-step="3">
-            <p>
-              <strong>F-Gases</strong>
+          <div class="step" data-step="12" style="padding: 1vh 1vw 1vh 1vw;">
+            <p style="color: var(--color-fgas)">
+              <strong style="color: var(--color-fgas)">F-Gases</strong>
                are mainly used as propellants and refrigerants,
               their use has been greatly reduced since 1990 as they contribute
               to the destruction of the ozone layer; the fluorocarbons (HFCs)
@@ -84,6 +295,57 @@
         </article>
       </section>
 
+      <section>
+        <div class="text-list" style="width: auto; margin:10vh 0 20vh 0;">
+          <p-titel style="text-align:left; padding-left:2.5vw;"> Worldwide comparison</p-titel>
+          <div class="boxtext">
+            <div class="square" style="height:60px; width:11px;"></div>
+            <p>
+              To have a better understanding of what numbers of emmission different countries have and more important, what stories are behind the numbers, we selected a few to show the anthropogenic Greenhouse Gases in context.
+            </p>
+          </div>
+        </div>
+
+        <div class="twoboxes">
+          <div class="text-list" style="width: 25vw; text-align:left; align-items:flex-start;margin-top:0;">
+              <div class="color-box">
+                <p-titel2> Absolute Emissions </p-titel2>
+                <p style="margin:0;">in megatons CO2eq, 2016</p>
+              </div>
+              <p-title2> China is at the top of the world economy. Does it also emit the most emissions?</p-titel2>
+              <p> From the first view, you would think that China emits way more emissions that Germany. But there is always more than one perspective on numbers like these. One option is to distribute the emissions to capita. </p>
+              <p-2 style="padding-left:0"> <italic> Scroll down to see the results</italic>
+            </p-2>
+          </div>
+          <img src="../assets/images/global1.svg"/ style="margin-left: 5vw;">
+        </div>
+
+        <div class="twoboxes" style="margin-top:3vh;">
+          <img src="../assets/images/global2.svg"/ style="margin-right: 5vw;">
+          <div class="text-list" style="width: 25vw; text-align:left; align-items:flex-start;margin-top:0;">
+              <div class="color-box">
+                <p-titel2> Per capita emissions </p-titel2>
+                <p style="margin:0;">in half tons CO2eq, 2016</p>
+              </div>
+              <p> China has 1.382.710.000 inhabitants, whether Germany has just 82.520.000 inhabitants. That means, China has a lot more inhabitants compared to Germany, which is not reflected at all in the absolute numbers.
+                In the second grafic you can see the concrete differences between both countries.  </p>
+            </p-2>
+            </div>
+        </div>
+
+        <div class="twoboxes" style="margin-top:3vh;">
+            <div class="text-list" style="width: 25vw; text-align:left; align-items:flex-start;margin-top:0;">
+                <div class="color-box">
+                  <p-titel2> Per km2 emissions</p-titel2>
+                  <p style="margin:0;">in 100 tons CO2eq, 2016</p>
+                </div>
+                <p> And from another viewpoint: China has a size of 9.596.961 km², Germany just 357.582 km². That means China has fewer inhabitants per km² than Germany. This is also important to take into account, because in contrast to the absolute numbers,  Germany produces more emissions per km² area than China. </p>
+              </p-2>
+            </div>
+            <img src="../assets/images/global3.svg"/ style="margin-left: 5vw;">
+          </div>
+
+      </section>
     </main>
     <footer>
     </footer>
