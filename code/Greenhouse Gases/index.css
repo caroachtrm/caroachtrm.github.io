@@ -15,9 +15,20 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: local('RobotoMono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v7/L0x7DF4xlVMF-BfR8bXMIjhOm36WWpCBC10HFw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 #app {
-  font-family: "RobotoMono-Bold", "Roboto-Medium", "RobotoMono-Medium","Roboto-Regular";
-  font-size: 100%;
+  font-family:'Roboto''Roboto Mono';
   line-height: 1.5;
   font-weight: normal;
   font-style: normal;
@@ -67,7 +78,8 @@ h-1 {
   height: auto;
   left: auto;
   top: 5vh;
-  font-family: "RobotoMono-bold";
+  font-family: 'Roboto Mono';
+  font-weight: bold;
   font-size: 2em;
   text-align: center;
   color: var(--color-white);
@@ -81,9 +93,10 @@ h-2 {
   height: auto;
   left: auto;
   top: 13vh;
-  font-family: "RobotoMono-Medium";
+  font-family: 'Roboto Mono';
   font-size: 1em;
-  font-style:normal;
+  font-weight: 700;
+  font-style: normal;
   text-align: center;
   letter-spacing: 0.105em;
   text-transform: uppercase;
@@ -100,18 +113,18 @@ strong {
 }
 
 p {
-  font-family: "Roboto-Regular";
+  font-family: 'Roboto';
 }
 
 p-2 {
-  font-family: "Roboto-Regular";
+  font-family: 'Roboto';
   font-style: italic;
   color: var(--color-accent2);
   padding-top: 2vh;
 }
 
 p-titel {
-  font-family: "RobotoMono-Bold";
+  font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -121,7 +134,7 @@ p-titel {
 }
 
 p-titel2 {
-  font-family: "RobotoMono-Bold";
+  font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: bold;
   font-size:20px;
@@ -130,9 +143,9 @@ p-titel2 {
 }
 
 p-typewriter {
-  font-family: "RobotoMono-Regular";
+  font-family: 'Roboto Mono';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 18px;
   color: var(--color-ch4);
 }
@@ -156,7 +169,7 @@ section {
 section.intro {
   margin: 30vh 0 0 0;
   padding: 0 0 0 0;
-  font-family: "Roboto-Regular";
+  font-family: 'Roboto';
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,7 +276,7 @@ section.scrolly {
   color: var(--color-ch4);
   background-color: #EDE9FD;
   padding: 1vh 2vw 1vh 2vw;
-  font-family: "RobotoMono-Regular";
+  font-family: 'Roboto';
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid var(--color-ch4); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
