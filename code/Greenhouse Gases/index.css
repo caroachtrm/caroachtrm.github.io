@@ -138,10 +138,9 @@ p-titel {
 p-titel2 {
   font-family: 'Roboto Mono';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size:20px;
   line-height: auto;
-  text-align: center;
 }
 
 p-typewriter {
@@ -190,7 +189,7 @@ section.intro {
 
 .square {
   height: auto;
-  width: 7px;
+  width: 6px;
   margin: 0 2vw 0 0;
   background-color: var(--color-black);
 }
@@ -238,7 +237,6 @@ section.intro {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  margin-top: 5vh;
   background-color: #F6F6F6;
   padding: 2vh 2vw 2vh 2vw;
   margin-bottom: 5vh;
@@ -333,7 +331,6 @@ section.scrolly {
 .textonimg{
   position: absolute;
   right: 10vw;
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 1vh 2vw 1vh 2vw;
   width: 50vw;
   display: flex;
