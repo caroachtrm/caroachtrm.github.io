@@ -114,10 +114,12 @@ strong {
 
 p {
   font-family: 'Roboto';
+  width: 50vw;
+  margin: 0;
 }
 
 p-2 {
-  font-family: 'Roboto';
+  font-family: 'Roboto Mono';
   font-style: italic;
   color: var(--color-accent2);
   padding-top: 2vh;
@@ -145,7 +147,7 @@ p-titel2 {
 p-typewriter {
   font-family: 'Roboto Mono';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   color: var(--color-ch4);
 }
@@ -179,16 +181,16 @@ section.intro {
 .boxtext {
   height: auto;
   width: auto;
-  max-width: 50vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 5vh 0 5vh 0;
 }
 
 .square {
-  height: 80px;
-  width: 20px;
+  height: auto;
+  width: 7px;
   margin: 0 2vw 0 0;
   background-color: var(--color-black);
 }
@@ -214,10 +216,10 @@ section.intro {
 
 .text-list {
   height: auto;
-  width: auto;
+  width: 50vw;
   display: flex;
   flex-direction: column;
-  margin-top: 5vh;
+  text-align:left;
 }
 
 .text-data{
@@ -264,8 +266,8 @@ section.scrolly {
 
 
 .dot {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   //background-color: var(--color-co2);
   border-radius: 50%;
   display: inline-block;
@@ -276,7 +278,7 @@ section.scrolly {
   color: var(--color-ch4);
   background-color: #EDE9FD;
   padding: 1vh 2vw 1vh 2vw;
-  font-family: 'Roboto';
+  font-family: 'Roboto Mono';
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid var(--color-ch4); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -305,21 +307,27 @@ section.scrolly {
 
 .img-row{
   height: auto;
-  width: auto;
+  width: 20vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
 .imgback{
   height: auto;
-  width: auto;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   align-items: flex-start;
+}
+
+.img-right{
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .textonimg{
