@@ -272,29 +272,6 @@ section.scrolly {
   margin-bottom: 2vh;
 }
 
-.dot1 {
-  width: 15px;
-  height: 15px;
-  background: #00C7A5;
-  border-radius: 50%;
-  margin-bottom: 2vh;
-  position: relative;
-  animation: dot1 7s infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes dot1 {
-  0% {left: 7px; top:28px;}
-  10%{left: -5px; top:26px;}
-  20%{left: -2px; top:18px;}
-  30%{left: 10px; top:10px;}
-  40%{left: 22px; top:2px;}
-  50%{left: 6px; top:0px;}
-  60%{left: -2px; top:4px;}
-  70%{left: 5px; top:12px;}
-  80%{left: 15px; top:19px;}
-  90%{left: 22px; top:24px;}
-  100%{left: 7px; top:28px;}
 
 .typewriter {
   color: var(--color-ch4);
