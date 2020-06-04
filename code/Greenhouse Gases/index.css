@@ -360,17 +360,17 @@ section.scrolly {
 }
 
 @keyframes dot1 {
-  0% {left: 7px; top:28px;}
-  10%{left: -5px; top:26px;}
+  0% {left: 7px; top:13px;}
+  10%{left: -5px; top:16px;}
   20%{left: -2px; top:18px;}
-  30%{left: 10px; top:10px;}
-  40%{left: 22px; top:2px;}
-  50%{left: 6px; top:0px;}
-  60%{left: -2px; top:4px;}
-  70%{left: 5px; top:12px;}
-  80%{left: 15px; top:19px;}
-  90%{left: 22px; top:24px;}
-  100%{left: 7px; top:28px;}
+  30%{left: 10px; top:24px;}
+  40%{left: 12px; top:16px;}
+  50%{left: 6px; top:12px;}
+  60%{left: -2px; top:18px;}
+  70%{left: 5px; top:22px;}
+  80%{left: 10px; top:25px;}
+  90%{left: 12px; top:18px;}
+  100%{left: 7px; top:13px;}
 }
 
 .dot2 {
@@ -385,17 +385,36 @@ section.scrolly {
 }
 
 @keyframes dot2 {
-  0% {left: 17px; top:20px;}
-  10%{left: 22px; top:24px;}
+  0% {left: 12px; top:20px;}
+  10%{left: 17px; top:24px;}
   20%{left: 15px; top:18px;}
-  30%{left: 6px; top:10px;}
-  40%{left: 2px; top:6px;}
-  50%{left: 0px; top:2px;}
-  60%{left: 22px; top:4px;}
-  70%{left: 10px; top:10px;}
-  80%{left: -2px; top:19px;}
-  90%{left: -5px; top:28px;}
-  100%{left: 17px; top:20px;}
+  30%{left: 9px; top:16px;}
+  40%{left: 5px; top:12px;}
+  50%{left: 7px; top:10px;}
+  60%{left: 10px; top:14px;}
+  70%{left: 12px; top:10px;}
+  80%{left: 6px; top:19px;}
+  90%{left: 8px; top:26px;}
+  100%{left: 12px; top:20px;}
+}
+
+.dot3 {
+  width: 15px;
+  height: 15px;
+  background: #00C7A5;
+  border-radius: 50%;
+  margin-bottom: 2vh;
+  position: relative;
+  animation: dot3 7s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes dot3 {
+  0% {left: 0px; top: 0; transform: rotate(0deg);}
+ 30% {left: 14px; top:3px; transform: rotate(40deg);}
+ 50% {left: 5px; top: 8px; transform: rotate(180deg);}
+ 70% {left: 16px; top: 2px; transform: rotate(90deg);}
+ 100% {left: 0; top:0; transform: rotate(0deg);}
 }
 
 article {
