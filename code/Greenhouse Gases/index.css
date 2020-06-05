@@ -441,24 +441,27 @@ article {
 .step {
   margin: 0 0 var(--spacing) 0;
   font-weight: normal;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   padding: var(--spacing);
-  width: 100%;
-  margin: 20vh 0;
+  margin: 10vh 0 10vh 0;
 }
 
 .step:nth-child(1) {
-  align-self: flex-start;
+  align-self: center;
 }
 .step:nth-child(2) {
   margin: 20vh 0;
+  position: relative;
+  left:15vw;
 }
 .step:nth-child(3) {
   margin: 20vh 0;
+  position: relative;
+  right:15vw;
 }
 .step:nth-child(4) {
   margin: 20vh 0;
-  align-self: flex-end;
+  align-self: center;
 }
 
 figure {
