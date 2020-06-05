@@ -57,6 +57,18 @@ header, main, footer {
   margin-top: 2vh;
 }
 
+.sticky-scroll{
+  position:-webkit-sticky;
+  position:sticky;
+  top:93vh;
+  bottom:0;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+}
+
 header {
   position: absolute;
   width: 100vw;
@@ -169,7 +181,7 @@ section {
 }
 
 section.intro {
-  margin: 30vh 0 0 0;
+  margin: 20vh 0 0 0;
   padding: 0 0 0 0;
   font-family: 'Roboto';
   display: flex;
