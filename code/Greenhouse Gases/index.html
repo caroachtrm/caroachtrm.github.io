@@ -145,7 +145,7 @@
 
       <div class="scrolly">
         <figure ref="figure">
-          <div class="text-list" style="width: auto; margin-top:15vh;">
+          <div class="text-list" style="width: auto; margin-top:20vh;">
             <p-titel style="text-align:left;"> The importance of dwell time </p-titel>
             <div class="boxtext">
               <div class="square" style="height:90px;"></div>
@@ -159,12 +159,17 @@
               </p>
             </div>
           </div>
-          <img v-if="step === 0" src="../assets/images/Time1.svg"/>
-          <img v-if="step === 1" src="../assets/images/Time2.svg"/>
-          <img v-if="step === 2" src="../assets/images/Time3.svg"/>
-          <img v-if="step === 3" src="../assets/images/Time4.svg"/>
-          <img v-if="step === 4" src="../assets/images/Time5.svg"/>
-          <img v-if="step === 5" src="../assets/images/Time6.svg"/>
+          <img v-if="step === 0" src="../assets/images/Time0y.svg"/>
+          <img v-if="step === 1" src="../assets/images/Time1y.svg"/>
+          <img v-if="step === 2" src="../assets/images/Time5y.svg"/>
+          <img v-if="step === 3" src="../assets/images/Time10y.svg"/>
+          <img v-if="step === 4" src="../assets/images/Time20y.svg"/>
+          <img v-if="step === 5" src="../assets/images/Time50y.svg"/>
+          <img v-if="step === 6" src="../assets/images/Time100y.svg"/>
+          <img v-if="step === 7" src="../assets/images/Time200y.svg"/>
+          <img v-if="step === 8" src="../assets/images/Time500y.svg"/>
+          <img v-if="step === 9" src="../assets/images/Time1000y.svg"/>
+          <img v-if="step === 10" src="../assets/images/Time2000y.svg"/>
         </figure>
         <article>
           <div class="step" data-step="0" style="background:none; ">
@@ -183,6 +188,21 @@
             <p></p>
           </div>
           <div class="step" data-step="5" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="6" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="7" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="8" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="9" style="background:none; ">
+            <p></p>
+          </div>
+          <div class="step" data-step="10" style="background:none; ">
             <p></p>
           </div>
         </article>
@@ -223,13 +243,13 @@
     <section class="scrolly">
         <figure ref="figure">
           <p-titel style="margin-left:-40vh;"> The origin of greenhouse gases </p-titel>
-          <img v-if="step === 6" src="../assets/images/Frame 1.svg"/>
-          <img v-if="step === 7" src="../assets/images/Frame 2.svg"/>
-          <img v-if="step === 8" src="../assets/images/Frame 3.svg"/>
-          <img v-if="step === 9" src="../assets/images/Frame 4.svg"/>
+          <img v-if="step === 11" src="../assets/images/Frame 1.svg"/>
+          <img v-if="step === 12" src="../assets/images/Frame 2.svg"/>
+          <img v-if="step === 13" src="../assets/images/Frame 3.svg"/>
+          <img v-if="step === 14" src="../assets/images/Frame 4.svg"/>
         </figure>
         <article>
-          <div class="step" data-step="6" style="padding: 1vh 1vw 1vh 1vw;">
+          <div class="step" data-step="11" style="padding: 1vh 1vw 1vh 1vw;">
             <p style="color: var(--color-black);width:30vw;">
               <strong style="color: var(--color-co2)">Carbon Dioxide</strong>
                is largely produced by the burning of fossil fuels such
@@ -240,7 +260,7 @@
               about 20 percent of the total German CO2 emissions.
             </p>
           </div>
-          <div class="step" data-step="7" style="padding: 1vh 1vw 1vh 1vw;">
+          <div class="step" data-step="12" style="padding: 1vh 1vw 1vh 1vw;">
             <p style="color: var(--color-black);width:30vw;">
               <strong style="color: var(--color-ch4)">Methane</strong>
                is always produced when organic material is decomposed in the
@@ -249,7 +269,7 @@
               example, a cow produces about 150 to 250 litres of methane.
             </p>
           </div>
-          <div class="step" data-step="8" style="padding: 1vh 1vw 1vh 1vw;">
+          <div class="step" data-step="13" style="padding: 1vh 1vw 1vh 1vw;">
             <p style="color: var(--color-black);width:30vw;">
               <strong style="color: var(--color-n2o)">Nitrous Oxide</strong>
                is produced in the soil during the decomposition of
@@ -258,7 +278,7 @@
               leads to a significant release of CO2 and nitrous oxide.
             </p>
           </div>
-          <div class="step" data-step="9" style="padding: 1vh 1vw 1vh 1vw;">
+          <div class="step" data-step="14" style="padding: 1vh 1vw 1vh 1vw;">
             <p style="color: var(--color-black);width:30vw;">
               <strong style="color: var(--color-fgas)">F-Gases</strong>
                are mainly used as propellants and refrigerants,
