@@ -3,7 +3,7 @@
   --color-white: #FFFFFF;
   --color-black: #202020;
   --color-accent: #00C7A5;
-  --color-accent2: #A6A6A6;
+  --color-accent2: #C4C4C4;
   --color-co2: #00C7A5;
   --color-ch4: #8D75F3;
   --color-n2o: #6CBAFA;
@@ -87,27 +87,29 @@ header, main, footer {
   justify-content: center;
   align-items: center;
   display: flex;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 34.9%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 40%);
 }
 
-header {
+.header {
   position: absolute;
   width: 100vw;
-  height: 20vh;
+  height: 40vh;
   left: 0px;
   top: 0px;
-  background: var(--color-black);
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
   margin: 0 0 0 0;
-  border-radius: 0px 0px 20px 20px;
 }
 
 
 h-1 {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align:left;
   width: auto;
   height: auto;
   left: auto;
@@ -116,20 +118,23 @@ h-1 {
   font-weight: bold;
   font-size: 2em;
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-black);
   padding-bottom: 5vh;
 }
 
 h-2 {
-  color: var(--color-white);
+  color: var(--color-accent2);
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align:left;
   width: auto;
   height: auto;
   left: auto;
   top: 13vh;
   font-family: 'Roboto Mono';
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   text-align: center;
   letter-spacing: 0.105em;
@@ -157,7 +162,7 @@ p-2 {
   font-family: 'Roboto Mono';
   font-weight: 500;
   font-style: normal;
-  color: var(--color-accent2);
+  color: var(--color-black);
   padding-top: 2vh;
 }
 
@@ -204,7 +209,7 @@ section {
 }
 
 section.intro {
-  margin: 20vh 0 0 0;
+  margin: 0 0 0 0;
   padding: 0 0 0 0;
   font-family: 'Roboto';
   display: flex;
@@ -225,8 +230,8 @@ section.intro {
 
 .square {
   height: auto;
-  width: 6px;
-  margin: 0 2vw 0 0;
+  width: 4px;
+  margin: 0 1vw 0 0;
   background-color: var(--color-black);
 }
 

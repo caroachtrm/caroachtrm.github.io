@@ -23,27 +23,37 @@
 <body>
   <div class="warning" scroll="no" style="overflow: hidden"> <p style="z-index:300;width:100vw; margin-top:45vh; background-color:rgba(0, 199, 165, 0.25);padding:2vh 0 2vh 0;"> This website only works on a display with a width of 1200px (or larger).</p></div>
   <div id="app">
-    <header style="z-index:-1;">
-      <h-1>Leaking anthropogenic Greenhouse Gases Data</h-1>
-      <h-2>Profiles & worldwide comparison</h-2>
-    </header>
+
+    <header></header>
+
     <main>
+      <div class="list-row" style="align-items:flex-start;">
+        <div class="list-part"style="margin:0;"> <div class="square" style="height:250px;margin:0;width:8px;background-color:var(--color-co2);"></div> </div>
+        <div class="list-part"style="margin:0;"> <div class="square" style="height:80px;margin:0;width:8px;background-color:var(--color-ch4);"></div> </div>
+        <div class="list-part"style="margin:0;"> <div class="square" style="height:60px;margin:0;width:8px;background-color:var(--color-n2o);"></div> </div>
+        <div class="list-part" style="margin:0;"> <div class="square" style="height:180px; margin:0;width:8px;background-color:var(--color-fgas);"></div> </div>
+      </div>
+      <div class="header"style="clear: both;margin-top:5vh;">
+        <p-titel style="position: absolute;font-size:30px;"> Greenhouse Gases made visible</p-titel>
+        <p-titel style="padding:6px 0 0 8px;color:var(--color-accent2);z-index:-1;position: absolute;font-size:30px;">Greenhouse Gases made visible</p-titel>
+        <p-2 style="color:var(--color-accent2);margin-top:10vh;">IMPORTANT FACTS & DATA</p-2>
+      </div>
 
       <div class="sticky-scroll" style="z-index: 200;">
         <div class="boxtext" style="margin: 2vh 0 2vh 0;">
-          <p-2 style="padding:0;">SCROLL DOWN</p-2>
+          <p-2 style="padding:0;color:var(--color-accent2);">SCROLL DOWN</p-2>
         </div>
       </div>
 
     <section class="intro">
-        <div class="boxtext">
+        <div class="boxtext" style="align-items:flex-start;:center;margin:0;">
           <div class="text-list">
-            <p> Greenhouse gases are in the Earth's atmosphere and responsible for global warming. In general, the warming of the earth is actually a natural process. However, humans produce so much additional greenhouse gases that the earth gets warmer than it would naturally. The consequences are environmental catastrophes and extinction of species.<br> <br> Explore on this website interesting data about the following four (most important) human-made greenhouse gases:
+            <p style="text-align:center;margin:0;"> Greenhouse gases are responsible for global warming, which is actually a natural process. However, humans produce so much additional greenhouse gases that the earth gets warmer than it would naturally. The consequences are environmental catastrophes and extinction of species. <br>Let’s take a closer  look at the main human-made greenhouse gases:
             </p>
           </div>
         </div>
 
-        <div class="list-row" style="margin:7vh 0 0 0;">
+        <div class="list-row" style="margin: 0;">
           <div class="list-part"> <span class="dot1" style="background-color: var(--color-co2)"></span> </div>
           <div class="list-part"> <span class="dot2" style="background-color: var(--color-ch4)"></span> </div>
           <div class="list-part"> <span class="dot1" style="background-color: var(--color-n2o)"></span> </div>
@@ -62,19 +72,19 @@
         <div class="list-row">
           <div class="list-part">
             <p style="width: auto;margin:1vh 0 2vh 0;">CO₂</p>
-            <div class="square" style="height:100px;margin:0;width:2px;"></div>
+            <div class="square" style="height:100px;margin:0;width:8px;background-color:var(--color-co2);"></div>
           </div>
           <div class="list-part">
             <p style="width: auto;margin:1vh 0 2vh 0;">CH₄</p>
-            <div class="square" style="height:100px;margin:0;width:2px;"></div>
+            <div class="square" style="height:100px;margin:0;width:8px;background-color:var(--color-ch4);"></div>
           </div>
           <div class="list-part">
             <p style="width: auto;margin:1vh 0 2vh 0;">N₂O</p>
-            <div class="square" style="height:100px;margin:0;width:2px;"></div>
+            <div class="square" style="height:100px;margin:0;width:8px;background-color:var(--color-n2o);"></div>
           </div>
           <div class="list-part">
             <p style="width: auto;margin:1vh 0 2vh 0;">PFC, NF₃, SF₂</p>
-            <div class="square" style="height:100px; margin:0;width:2px;"></div>
+            <div class="square" style="height:100px; margin:0;width:8px;background-color:var(--color-fgas);"></div>
           </div>
         </div>
         <div style="width:auto; margin-bottom:5vh;">
@@ -144,7 +154,7 @@
           <div class="text-list" style="width: auto; margin-top:20vh;">
             <p-titel style="text-align:left;"> Greenhouse gases have different lifetimes </p-titel>
             <div class="boxtext">
-              <div class="square" style="height:90px;"></div>
+              <div class="square" style="height:120px;"></div>
               <p style="z-index:200; background-color: #ffffff;">
                 As already mentioned, the GWP expresses the warming effect of a
                 certain amount of the respective greenhouse gas over a defined
@@ -238,14 +248,14 @@
 
     <section class="scrolly">
         <figure ref="figure" style="align-items:center;">
-          <p-titel style="margin-left:-40vh;"> Where the greenhouse gases come from</p-titel>
+          <p-titel style="margin-left:-40vh;"> The origin of greenhouse gases</p-titel>
           <img v-if="step === 11" src="../assets/images/Frame 1.svg"/>
           <img v-if="step === 12" src="../assets/images/Frame 2.svg"/>
           <img v-if="step === 13" src="../assets/images/Frame 3.svg"/>
           <img v-if="step === 14" src="../assets/images/Frame 4.svg"/>
         </figure>
         <article style="margin: 0 0 0 0;">
-          <div class="step" data-step="11" style="padding: 1vh 1vw 1vh 1vw;margin: 0 0 10vh 0;">
+          <div class="step" data-step="11" style="padding: 1vh 1vw 1vh 1vw;margin: 0 0 20vh 0;">
             <p style="color: var(--color-black);width:30vw;">
               <span style="color:var(--color-co2)"> Carbon Dioxide</span>
               is largely produced by the burning of fossil fuels such
@@ -256,7 +266,7 @@
               about 20 percent of the total German <span style="color:var(--color-co2)"> CO₂</span> emissions.
             </p>
           </div>
-          <div class="step" data-step="12" style="padding: 1vh 1vw 1vh 1vw;margin: 0 0 20vh 0;">
+          <div class="step" data-step="12" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
             <p style="color: var(--color-black);width:30vw;">
               <span style="color: var(--color-ch4)">Methane</span>
                is always produced when organic material is decomposed in the
@@ -265,7 +275,7 @@
               example, a cow produces about 150 to 250 litres of methane.
             </p>
           </div>
-          <div class="step" data-step="13" style="padding: 1vh 1vw 1vh 1vw;margin: 0 0 20vh 0;">
+          <div class="step" data-step="13" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
             <p style="color: var(--color-black);width:30vw;">
               <span style="color: var(--color-n2o)">Nitrous Oxide</span>
                is produced in the soil during the decomposition of
@@ -274,7 +284,7 @@
               leads to a significant release of <span style="color:var(--color-co2)"> CO₂</span> and <span style="color: var(--color-n2o)">Nitrous Oxide</span>.
             </p>
           </div>
-          <div class="step" data-step="14" style="padding: 1vh 1vw 1vh 1vw;margin: 0 0 20vh 0;">
+          <div class="step" data-step="14" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
             <p style="color: var(--color-black);width:30vw;">
               <span style="color: var(--color-fgas)">F-Gases</span>
                are mainly used as propellants and refrigerants,
