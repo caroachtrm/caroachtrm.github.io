@@ -302,7 +302,7 @@ section.scrolly {
   background: #F7F7F7;
   width:90vw;
   border-radius: 5px;
-  padding: 5vh 5vw 5vh 5vw;
+  padding: 3vh 3vw 3vh 3vw;
   margin: 15vh 5vw 5vh 5vw;
   display: flex;
   flex-direction: row;
@@ -370,12 +370,12 @@ a{
 
 .imgback{
   height: auto;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .img-right{

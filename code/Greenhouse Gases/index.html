@@ -27,17 +27,21 @@
     <header></header>
 
     <main>
-      <div class="list-row" style="align-items:flex-start;">
-        <div class="list-part"style="margin:0;"> <div class="square" style="height:250px;margin:0;width:8px;background-color:var(--color-accent2);"></div> </div>
-        <div class="list-part"style="margin:0;"> <div class="square" style="height:80px;margin:0;width:8px;background-color:var(--color-accent2);"></div> </div>
-        <div class="list-part"style="margin:0;"> <div class="square" style="height:60px;margin:0;width:8px;background-color:var(--color-accent2);"></div> </div>
-        <div class="list-part" style="margin:0;"> <div class="square" style="height:180px; margin:0;width:8px;background-color:var(--color-accent2);"></div> </div>
+      <div class="imgback">
+        <img src="../assets/images/dots.svg" style="align-items:center;width: 100%;">
+        <div class="header"style="clear: both;">
+          <p-titel style="position: absolute;font-size:35px;"> Greenhouse Gases made visible</p-titel>
+          <p-titel style="padding:6px 0 0 8px;color:var(--color-accent2);z-index:-1;position: absolute;font-size:35px;">Greenhouse Gases made visible</p-titel>
+          <p-2 style="color:var(--color-accent2);margin-top:13vh;">IMPORTANT FACTS & DATA</p-2>
+        </div>
+        <div class="boxtext" style="align-items:center;margin:15vh 0 0 0;position:absolute;flex-direction: column;">
+          <div class="text-list">
+            <p style="text-align:center;"> Greenhouse gases are responsible for global warming, which is actually a natural process. However, humans produce so much additional greenhouse gases that the earth gets warmer than it would naturally. The consequences are environmental catastrophes and extinction of species. Let’s take a closer  look at the main human-made greenhouse gases:
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="header"style="clear: both;margin-top:5vh;">
-        <p-titel style="position: absolute;font-size:35px;"> Greenhouse Gases made visible</p-titel>
-        <p-titel style="padding:6px 0 0 8px;color:var(--color-accent2);z-index:-1;position: absolute;font-size:35px;">Greenhouse Gases made visible</p-titel>
-        <p-2 style="color:var(--color-accent2);margin-top:10vh;">IMPORTANT FACTS & DATA</p-2>
-      </div>
+
 
       <div class="sticky-scroll" style="z-index: 200;">
         <div class="boxtext" style="margin: 2vh 0 2vh 0;">
@@ -45,19 +49,12 @@
         </div>
       </div>
 
+
     <section class="intro">
-        <div class="boxtext" style="align-items:flex-start;:center;margin:0 0 5vh 0;">
-          <div class="text-list">
-            <p style="text-align:center;margin:0;"> Greenhouse gases are responsible for global warming, which is actually a natural process. However, humans produce so much additional greenhouse gases that the earth gets warmer than it would naturally. The consequences are environmental catastrophes and extinction of species. Let’s take a closer  look at the main human-made greenhouse gases:
-            </p>
-
-          </div>
-        </div>
-
-        <div class="list-row" style="margin: 0;">
+        <div class="list-row" style="margin-top: -5vh;">
           <div class="list-part"> <span class="dot1" style="background-color: var(--color-co2)"></span> </div>
-          <div class="list-part"> <span class="dot1" style="background-color: var(--color-ch4)"></span> </div>
-          <div class="list-part"> <span class="dot2" style="background-color: var(--color-n2o)"></span> </div>
+          <div class="list-part"> <span class="dot2" style="background-color: var(--color-ch4)"></span> </div>
+          <div class="list-part"> <span class="dot1" style="background-color: var(--color-n2o)"></span> </div>
           <div class="list-part"> <span class="dot2" style="background-color: var(--color-fgas)"></span> </div>
         </div>
 
@@ -73,19 +70,19 @@
         <div class="list-row">
           <div class="list-part">
             <p style="width: auto;margin:1vh 0 2vh 0;">CO₂</p>
-            <div class="square" style="height:100px;margin:0;width:8px;background-color:var(--color-co2);"></div>
+            <div class="square" style="height:100px;margin:0;width:2px;background-color:var(--color-black);"></div>
           </div>
           <div class="list-part">
             <p style="width: auto;margin:1vh 0 2vh 0;">CH₄</p>
-            <div class="square" style="height:100px;margin:0;width:8px;background-color:var(--color-ch4);"></div>
+            <div class="square" style="height:100px;margin:0;width:2px;background-color:var(--color-black);"></div>
           </div>
           <div class="list-part">
             <p style="width: auto;margin:1vh 0 2vh 0;">N₂O</p>
-            <div class="square" style="height:100px;margin:0;width:8px;background-color:var(--color-n2o);"></div>
+            <div class="square" style="height:100px;margin:0;width:2px;background-color:var(--color-black);"></div>
           </div>
           <div class="list-part">
             <p style="width: auto;margin:1vh 0 2vh 0;">PFC, NF₃, SF₂</p>
-            <div class="square" style="height:100px; margin:0;width:8px;background-color:var(--color-fgas);"></div>
+            <div class="square" style="height:100px; margin:0;width:2px;background-color:var(--color-black);"></div>
           </div>
         </div>
         <div style="width:auto; margin-bottom:5vh;">
@@ -354,7 +351,6 @@
         <div class="outro-left">
           <div class="text-list">
             <p-titel style="color: var(--color-black); text-align:left;"> About: Greenhouse Gases made visible </p-titel>
-            <br>
             <p-2 style="color:var(--color-accent2);"> AUTHORS </p-2>
             <p> Stefanie Semm, <a style="font-style:normal;" href="https://carolinachtermann.com/">Carolin Achtermann</a> </p>
               <br>
@@ -365,8 +361,7 @@
             <p> GEOlino: <a href="https://www.geo.de/geolino/natur-und-umwelt/15385-rtkl-klimawandel-wie-kohlendioxid-das-klima-veraendert">Unser Klima, Wie Kohlendioxid unser Klima verändert</a>, 2016</p>
             <p> World Resources Institute: <a href="https://www.wri.org/blog/2020/02/greenhouse-gas-emissions-by-country-sector">Greenhouse gas emissions by country sector</a>, 2020</p>
             <p> Bundesministerium für Umwelt, Naturschutz und nukleare Sicherheit (BMU): <a href="https://www.kaeltemittel-info.de/informationen/allgemeine-informationen/emissionen-fluorierter-treibhausgase/"><br>Emissionen fluorierter Treibhausgase</a></p>
-              <br>
-            <div class="boxtext" style="justify-content:flex-start;">
+            <div class="boxtext" style="justify-content:flex-start;margin:2vh 0 2vh 0;">
               <div class="text-list" style="width:15vw;">
                   <p-2 style="color:var(--color-accent2);"> COURSE </p-2>
                   <p> Klimagrafik</p>
@@ -376,7 +371,7 @@
                   <p> Boris Müller</p>
                 </div>
             </div>
-            <div class="boxtext" style="justify-content:flex-start;">
+            <div class="boxtext" style="justify-content:flex-start;margin:4vh 0 2vh 0;">
               <img style="max-width:3vw;margin-right:1vw;"src="../assets/images/mail.svg">
               <p>If you have any questions or suggestions, <br>we would be happy to <a style="font-style:normal;" href="mailto:carolinachtermann@gmail.com?subject= Greenhouse Gases made visible">hear from you.</a>
                </p>
