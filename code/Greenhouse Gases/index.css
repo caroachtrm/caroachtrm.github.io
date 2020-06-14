@@ -374,8 +374,8 @@ a{
 /* The typing effect */
 @keyframes typing {
   0% { width: 0 }
-  20% { width: 500px }
-  100% { width: 500px }
+  20% { width: 380px }
+  100% { width: 380px }
 }
 
 /* The typewriter cursor effect */
