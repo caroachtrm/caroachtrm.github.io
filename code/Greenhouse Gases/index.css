@@ -236,14 +236,15 @@ section.intro {
 
 .boxshadowtext{
   height: auto;
-  width: 70vw;
+  width: 75vw;
   display: flex;
   flex-direction: column;
   text-align:left;
   background: #FFFFFF;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
-  margin-top: 7vh;
-  margin-bottom: 7vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  align-items:center;
 }
 
 .divlist{
@@ -262,7 +263,7 @@ section.intro {
 
 .list-row {
   height: auto;
-  width: 80vw;
+  width: 88vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -271,7 +272,7 @@ section.intro {
 
 .list-part {
   height: auto;
-  width: 20vw;
+  width: 22vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

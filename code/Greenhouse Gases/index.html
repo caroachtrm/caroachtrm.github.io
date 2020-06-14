@@ -75,29 +75,146 @@
         </div>
 
         <div class="imgback">
-          <div class="list-row">
-            <div class="list-part"> <div class="square" style="height:900px;margin:0;width:6px;background-color:var(--color-co2);"></div> </div>
-            <div class="list-part"> <div class="square" style="height:900px;margin:0;width:6px;background-color:var(--color-ch4);"></div> </div>
-            <div class="list-part"> <div class="square" style="height:900px;margin:0;width:6px;background-color:var(--color-n2o);"></div> </div>
-            <div class="list-part"> <div class="square" style="height:900px; margin:0;width:6px;background-color:var(--color-fgas);"></div> </div>
+          <div class="list-row" style="margin-bottom:0;">
+            <div class="list-part"> <div class="square" style="height:500px;margin:0;width:6px;background-color:var(--color-co2);"></div> </div>
+            <div class="list-part"> <div class="square" style="height:500px;margin:0;width:6px;background-color:var(--color-ch4);"></div> </div>
+            <div class="list-part"> <div class="square" style="height:500px;margin:0;width:6px;background-color:var(--color-n2o);"></div> </div>
+            <div class="list-part"> <div class="square" style="height:500px; margin:0;width:6px;background-color:var(--color-fgas);"></div> </div>
           </div>
           <div class="divlist">
             <div class="boxshadowtext">
               <div class="twoboxes">
-                <div class="textlist" style="width: 25vw; text-align:left; align-items:flex-start;">
+                <div class="textlist" style="width: 25vw; text-align:left; align-items:flex-start; margin-right:10vw;">
                   <p-titel2> Ratio of Greenhouse Gases in our Earth's Atmosphere </p-titel2>
-                  <p style="width:25vw; padding-top:4vh;"> Our air consists mainly of nitrogen and oxygen. The trace gases together, which also contain the gases focused on this website, make up only about 0.1% of our air! </p>
+                  <p style="width:30vw; padding-top:4vh;"> Our air consists mainly of nitrogen and oxygen. The trace gases together, which also contain the gases focused on this website, make up only about 0.1% of our air! </p>
                 </div>
                 <img src="../assets/images/air-piechart.svg" style="margin: 0 4vw 0 4vw;">
               </div>
             </div>
-            <div class="boxshadowtext">
-              <div class="textlist" style="text-align:left; align-items:flex-start;padding: 5vh 5vw 5vh 10vw;">
-                  <p-titel2> Greenhouse Gases have different Lifetimes </p-titel2>
-                  <p style="width:45vw; padding-top:4vh;"> The various gases differ significantly. For example: They remain in the atmosphere for different periods of time, and therefore affect the climate on very different timescales – from years to millennia.  </p>
+          </div>
+        </div>
+
+        <div class="scrolly">
+          <figure ref="figure" style="height:auto;">
+            <div class="imgback" style="align-items:center;padding:0;margin-top:0;">
+              <div class="list-row" style="margin:0;">
+                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:400px;margin:0;width:6px;background-color:var(--color-co2);"></div> </div>
+                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:400px;margin:0;width:6px;background-color:var(--color-ch4);"></div> </div>
+                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:400px;margin:0;width:6px;background-color:var(--color-n2o);"></div> </div>
+                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:400px; margin:0;width:6px;background-color:var(--color-fgas);"></div> </div>
+              </div>
+              <div class="divlist">
+                <div class="boxshadowtext" style="margin-top:10vh;">
+                  <div class="textlist" style="text-align:left; align-items:flex-start;padding: 5vh 5vw 5vh 8vw;">
+                    <p-titel2> Greenhouse Gases have different Lifetimes </p-titel2>
+                    <p style="width:60vw; padding-top:4vh;"> The various gases differ significantly. For example: They remain in the atmosphere for different periods of time, and therefore affect the climate on very different timescales – from years to millennia.  </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="list-row" v-if="step === 0">
+              <div class="list-part"> <img src="../assets/images/time/time0y-1.svg"> </div>
+              <div class="list-part"> <img src="../assets/images/time/time0y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time0y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time0y-4.svg">  </div>
+            </div>
+            <div class="list-row" v-if="step === 1">
+              <div class="list-part"> <img src="../assets/images/time/time1y-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time1y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time1y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time1y-4.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;" v-if="step === 2">
+              <div class="list-part"> <img src="../assets/images/time/time5y-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time5y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time5y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time5y-4.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;" v-if="step === 3">
+              <div class="list-part"> <img src="../assets/images/time/time10y-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time10y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time10y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time10y-4.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;" v-if="step === 4">
+              <div class="list-part"> <img src="../assets/images/time/time20y-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time20y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time20y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time20y-4.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;" v-if="step === 5">
+              <div class="list-part"> <img src="../assets/images/time/time50y-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time50y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time50y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time50y-4.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;" v-if="step === 6">
+              <div class="list-part"> <img src="../assets/images/time/time100y-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time100y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time100y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time100y-4.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;" v-if="step === 7">
+              <div class="list-part"> <img src="../assets/images/time/time200y-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time200y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time200y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time200y-4.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;" v-if="step === 8">
+              <div class="list-part"> <img src="../assets/images/time/time500y-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time500y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time500y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time500y-4.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;" v-if="step === 9">
+              <div class="list-part"> <img src="../assets/images/time/time1000y-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time1000y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time1000y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time1000y-4.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;" v-if="step === 10">
+              <div class="list-part"> <img src="../assets/images/time/time2000y-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time2000y-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time2000y-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/time/time2000y-4.svg">  </div>
+            </div>
+
+          </figure>
+          <article>
+            <div class="step" data-step="0" style="background:none;width:100vw;height:20vh; ">
+              <p-2>1 <br>YEAR</p-2>
+            </div>
+            <div class="step" data-step="1" style="background:none; left:0;width:100vw;height:20vh;">
+              <p-2>5 <br>YEARS</p-2>
+            </div>
+            <div class="step" data-step="2" style="background:none; right:0;width:100vw;height:20vh;">
+              <p-2>10 <br>YEARS</p-2>
+            </div>
+            <div class="step" data-step="3" style="background:none; width:100vw;height:20vh;">
+              <p-2>20 <br>YEARS</p-2>
+            </div>
+            <div class="step" data-step="4" style="background:none; width:100vw;height:20vh;">
+              <p-2>50 <br>YEARS</p-2>
+            </div>
+            <div class="step" data-step="5" style="background:none; width:100vw;height:20vh;">
+              <p-2>100 <br>YEARS</p-2>
+            </div>
+            <div class="step" data-step="6" style="background:none;width:100vw;height:20vh; ">
+              <p-2>200 <br>YEARS</p-2>
+            </div>
+            <div class="step" data-step="7" style="background:none;width:100vw;height:20vh; ">
+              <p-2>500 <br>YEARS</p-2>
+            </div>
+            <div class="step" data-step="8" style="background:none; width:100vw;height:20vh;">
+              <p-2>1000 <br>YEARS</p-2>
+            </div>
+            <div class="step" data-step="9" style="background:none; width:100vw;height:20vh;">
+              <p-2>2000 <br>YEARS</p-2>
+            </div>
+            <div class="step" data-step="10" style="background:none; ">
+              <p-2></p-2>
+            </div>
+          </article>
         </div>
 
         <div style="width:auto; margin-bottom:5vh;">
@@ -162,70 +279,7 @@
         </div>
       </div>
 
-      <div class="scrolly">
-        <figure ref="figure">
-          <div class="text-list" style="width: auto; margin-top:20vh;">
-            <p-titel style="text-align:left;"> Greenhouse gases have different lifetimes </p-titel>
-            <div class="boxtext">
-              <div class="square" style="height:120px;"></div>
-              <p style="z-index:200; background-color: #ffffff;">
-                As already mentioned, the Global Warming Potential (GWP) expresses the warming effect of a
-                certain amount of the respective greenhouse gas over a defined
-                period of time (100 years) compared to that of <span style="color:var(--color-co2)"> CO₂</span>. But apart
-                from that, all gases are remaining in the atmosphere for different
-                amounts of time, from months to millennia, and affect the climate
-                on very different timescales.
-              </p>
-            </div>
-          </div>
-          <img v-if="step === 0" src="../assets/images/Time0y.svg"/>
-          <img v-if="step === 1" src="../assets/images/Time1y.svg"/>
-          <img v-if="step === 2" src="../assets/images/Time5y.svg"/>
-          <img v-if="step === 3" src="../assets/images/Time10y.svg"/>
-          <img v-if="step === 4" src="../assets/images/Time20y.svg"/>
-          <img v-if="step === 5" src="../assets/images/Time50y.svg"/>
-          <img v-if="step === 6" src="../assets/images/Time100y.svg"/>
-          <img v-if="step === 7" src="../assets/images/Time200y.svg"/>
-          <img v-if="step === 8" src="../assets/images/Time500y.svg"/>
-          <img v-if="step === 9" src="../assets/images/Time1000y.svg"/>
-          <img v-if="step === 10" src="../assets/images/Time2000y.svg"/>
-        </figure>
-        <article>
-          <div class="step" data-step="0" style="background:none;width:95vw;height:20vh; ">
-            <p-2>1 YEAR</p-2>
-          </div>
-          <div class="step" data-step="1" style="background:none; left:0;width:95vw;height:20vh;">
-            <p-2>5 YEARS</p-2>
-          </div>
-          <div class="step" data-step="2" style="background:none; right:0;width:95vw;height:20vh;">
-            <p-2>10 YEARS</p-2>
-          </div>
-          <div class="step" data-step="3" style="background:none; width:95vw;height:20vh;">
-            <p-2>20 YEARS</p-2>
-          </div>
-          <div class="step" data-step="4" style="background:none; width:95vw;height:20vh;">
-            <p-2>50 YEARS</p-2>
-          </div>
-          <div class="step" data-step="5" style="background:none; width:95vw;height:20vh;">
-            <p-2>100 YEARS</p-2>
-          </div>
-          <div class="step" data-step="6" style="background:none;width:95vw;height:20vh; ">
-            <p-2>200 YEARS</p-2>
-          </div>
-          <div class="step" data-step="7" style="background:none;width:95vw;height:20vh; ">
-            <p-2>500 YEARS</p-2>
-          </div>
-          <div class="step" data-step="8" style="background:none; width:95vw;height:20vh;">
-            <p-2>1000 YEARS</p-2>
-          </div>
-          <div class="step" data-step="9" style="background:none; width:95vw;height:20vh;">
-            <p-2>2000 YEARS</p-2>
-          </div>
-          <div class="step" data-step="10" style="background:none; ">
-            <p-2></p-2>
-          </div>
-        </article>
-      </div>
+
 
       <div class="text-list" style="width: auto; margin-top:8vh;">
         <p-titel style="color: var(--color-black); text-align:left;"> Detailed facts about greenhouse gases </p-titel>
