@@ -235,25 +235,48 @@
             </div>
         </div>
 
-      <div class="list-row" style="margin:5vh 0 0 0;">
-        <div class="list-part"> <p style="width:auto;color: var(--color-co2);"> 1 ppm CO₂ </p> </div>
-        <div class="list-part"> <p style="width:auto;color: var(--color-ch4);"> 1 ppm CH₄ </p> </div>
-        <div class="list-part"> <p style="width:auto;color: var(--color-n2o);"> 1 ppm N₂O </p> </div>
-        <div class="list-part"> <p style="width:auto;color: var(--color-fgas);">1 ppm PFC, NF₃, SF₆ </p> </div>
-      </div>
-      <img src="../assets/images/Bobbel_start.svg">
-      <div class="list-row" style="margin-bottom: 0;">
-        <div class="list-part"> <p style="width:auto;color: var(--color-co2);"> 1 CO₂eq </p> </div>
-        <div class="list-part"> <p style="width:auto;color: var(--color-ch4);"> 28 CO₂eq </p> </div>
-        <div class="list-part"> <p style="width:auto;color: var(--color-n2o);"> 298 CO₂eq </p> </div>
-        <div class="list-part"> <p style="width:auto;color: var(--color-fgas);"> 12400-23500 CO₂eq </p> </div>
-      </div>
-      <div class="list-row" style="margin: 5vh 0 0 0;">
-        <img class="img-row" src="../assets/images/Bobbel1.svg">
-        <img class="img-row" src="../assets/images/Bobbel2.svg">
-        <img class="img-row" src="../assets/images/Bobbel3.svg">
-        <img class="img-row" src="../assets/images/Bobbel4.svg">
-      </div>
+        <div class="scrolly">
+          <figure ref="figure">
+            <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 11">
+              <div class="list-part"> <img src="../assets/images/co2eq/co2-1.svg"> </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/ch4-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/n2o-1.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/fgas-1.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 12">
+              <div class="list-part"> <img src="../assets/images/co2eq/co2-2.svg"> </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/ch4-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/n2o-2.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/fgas-2.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 13">
+              <div class="list-part"> <img src="../assets/images/co2eq/co2-3.svg"> </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/ch4-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/n2o-3.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/fgas-3.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 14">
+              <div class="list-part"> <img src="../assets/images/co2eq/co2-4.svg"> </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/ch4-4.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/n2o-4.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/fgas-4.svg">  </div>
+            </div>
+          </figure>
+          <article>
+            <div class="step" data-step="11" style="background:none;width:100vw;height:40vh">
+              <p-2></p-2>
+            </div>
+            <div class="step" data-step="12" style="background:none;width:100vw;height:40vh">
+              <p-2></p-2>
+            </div>
+            <div class="step" data-step="13" style="background:none;width:100vw;height:40vh">
+              <p-2></p-2>
+            </div>
+            <div class="step" data-step="14" style="background:none;width:100vw;height:40vh">
+              <p-2></p-2>
+            </div>
+          </article>
+        </div>
 
       <div class="imgback">
         <img class="img-right" src="../assets/images/bobbel_background.svg">
