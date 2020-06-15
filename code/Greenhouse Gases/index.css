@@ -192,6 +192,12 @@ p-typewriter {
   color: var(--color-ch4);
 }
 
+abbr[title], acronym[title] {
+    border-bottom: solid 1px;
+    border-color: lightgrey;
+    text-decoration: none;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -228,6 +234,26 @@ section.intro {
   margin: 5vh 0 5vh 0;
 }
 
+.boxshadowtext{
+  height: auto;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  text-align:left;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  align-items:center;
+}
+
+.divlist{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  position: absolute;
+}
+
 .square {
   height: auto;
   width: 4px;
@@ -237,7 +263,7 @@ section.intro {
 
 .list-row {
   height: auto;
-  width: 80vw;
+  width: 88vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -246,7 +272,7 @@ section.intro {
 
 .list-part {
   height: auto;
-  width: 20vw;
+  width: 22vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,7 +365,7 @@ a{
   margin: 5vh auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation:
-    typing 15s steps(30) infinite forwards;
+    typing 30s steps(30) infinite forwards;
     blink-caret 1s step-end infinite;
   display: inline-block;
 
@@ -348,8 +374,8 @@ a{
 /* The typing effect */
 @keyframes typing {
   0% { width: 0 }
-  50% { width: 45vw }
-  100% { width: 45vw }
+  20% { width: 380px }
+  100% { width: 380px }
 }
 
 /* The typewriter cursor effect */
