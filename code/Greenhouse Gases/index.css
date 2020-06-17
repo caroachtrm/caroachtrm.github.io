@@ -82,7 +82,7 @@ header, main, footer {
 .sticky-scroll{
   position:-webkit-sticky;
   position:sticky;
-  top:93vh;
+  top:90vh;
   bottom:0;
   width: 100vw;
   justify-content: center;
@@ -103,6 +103,15 @@ header, main, footer {
   align-items: center;
   padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing);
   margin: 0 0 0 0;
+}
+
+.backtotop{
+  font-family: 'Roboto Mono';
+  font-size: 1em;
+  font-weight: 500;
+  font-style:normal;
+  color: var(--color-accent2);
+  text-decoration: none;
 }
 
 
