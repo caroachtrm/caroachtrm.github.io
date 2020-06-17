@@ -157,6 +157,7 @@ p {
   width: 50vw;
   margin: 0;
   font-size: 1em;
+  line-height: 150%;
 }
 
 p-2 {
@@ -165,6 +166,7 @@ p-2 {
   font-style: normal;
   color: var(--color-black);
   padding-top: 2vh;
+  line-height: 150%;
 }
 
 p-titel {
@@ -175,6 +177,7 @@ p-titel {
   line-height: auto;
   text-align: center;
   margin-bottom: 1vh;
+  line-height: 150%;
 }
 
 p-titel2 {
@@ -182,7 +185,7 @@ p-titel2 {
   font-style: normal;
   font-weight: 500;
   font-size:20px;
-  line-height: auto;
+  line-height: 150%;
 }
 
 p-typewriter {
