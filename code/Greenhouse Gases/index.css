@@ -2,7 +2,8 @@
   --spacing: 2rem;
   --color-white: #FFFFFF;
   --color-black: #202020;
-  --color-accent: #00C7A5;
+  --color-black2: #353535;
+  --color-accent: #E5E5E5;
   --color-accent2: #C4C4C4;
   --color-co2: #00C7A5;
   --color-ch4: #8D75F3;
@@ -245,6 +246,16 @@ section.intro {
   margin-top: 4vh;
   margin-bottom: 4vh;
   align-items:center;
+}
+
+.blacktext{
+  background-color: var(--color-black2);
+  color: white;
+  text-align: center;
+  width: 1126px;
+  height: auto;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
 
 .divlist{
