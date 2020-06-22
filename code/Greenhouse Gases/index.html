@@ -237,26 +237,32 @@
         </div>
 
         <div class="scrolly">
-          <figure ref="figure">
+          <figure ref="figure" style="height:80vh;">
             <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 11">
+              <div class="list-part"> <img src="../assets/images/co2eq/co2-0.svg"> </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/ch4-0.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/n2o-0.svg">  </div>
+              <div class="list-part"> <img src="../assets/images/co2eq/fgas-0.svg">  </div>
+            </div>
+            <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 12">
               <div class="list-part"> <img src="../assets/images/co2eq/co2-1.svg"> </div>
               <div class="list-part"> <img src="../assets/images/co2eq/ch4-1.svg">  </div>
               <div class="list-part"> <img src="../assets/images/co2eq/n2o-1.svg">  </div>
               <div class="list-part"> <img src="../assets/images/co2eq/fgas-1.svg">  </div>
             </div>
-            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 12">
+            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 13">
               <div class="list-part"> <img src="../assets/images/co2eq/co2-2.svg"> </div>
               <div class="list-part"> <img src="../assets/images/co2eq/ch4-2.svg">  </div>
               <div class="list-part"> <img src="../assets/images/co2eq/n2o-2.svg">  </div>
               <div class="list-part"> <img src="../assets/images/co2eq/fgas-2.svg">  </div>
             </div>
-            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 13">
+            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 14">
               <div class="list-part"> <img src="../assets/images/co2eq/co2-3.svg"> </div>
               <div class="list-part"> <img src="../assets/images/co2eq/ch4-3.svg">  </div>
               <div class="list-part"> <img src="../assets/images/co2eq/n2o-3.svg">  </div>
               <div class="list-part"> <img src="../assets/images/co2eq/fgas-3.svg">  </div>
             </div>
-            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 14">
+            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 15">
               <div class="list-part"> <img src="../assets/images/co2eq/co2-4.svg"> </div>
               <div class="list-part"> <img src="../assets/images/co2eq/ch4-4.svg">  </div>
               <div class="list-part"> <img src="../assets/images/co2eq/n2o-4.svg">  </div>
@@ -276,10 +282,13 @@
             <div class="step" data-step="14" style="background:none;height:40vh">
               <p-2></p-2>
             </div>
+            <div class="step" data-step="15" style="background:none;height:40vh">
+              <p-2></p-2>
+            </div>
           </article>
         </div>
 
-      <div class="imgback">
+      <div class="imgback" style="margin-top:18.5vh;">
         <img class="img-right" src="../assets/images/bobbel_background.svg">
         <div class="divlist">
           <div class="boxtext" style="background: rgba(255, 255, 255, 0.6);border-radius: 5px;padding:2vh 2vw 2vh 2vw; margin-bottom:80vh;">
@@ -339,13 +348,13 @@
               <div class="text-list" style="width: auto; margin-top:1vh 0 8vh 0;">
                 <p-titel2 style="color: var(--color-black); text-align:left; padding-right:10vw;"> The origin of human-made Greenhouse Gases </p-titel2>
                 </div>
-            <img v-if="step === 15" src="../assets/images/Frame 1.svg"/>
-            <img v-if="step === 16" src="../assets/images/Frame 2.svg"/>
-            <img v-if="step === 17" src="../assets/images/Frame 3.svg"/>
-            <img v-if="step === 18" src="../assets/images/Frame 4.svg"/>
+            <img v-if="step === 16" src="../assets/images/Frame 1.svg"/>
+            <img v-if="step === 17" src="../assets/images/Frame 2.svg"/>
+            <img v-if="step === 18" src="../assets/images/Frame 3.svg"/>
+            <img v-if="step === 19" src="../assets/images/Frame 4.svg"/>
           </figure>
           <article style="margin: 0 0 0 0;">
-            <div class="step" data-step="15" style="padding: 1vh 1vw 1vh 1vw;margin: 0 0 20vh 5vw;">
+            <div class="step" data-step="16" style="padding: 1vh 1vw 1vh 1vw;margin: 0 0 20vh 5vw;">
               <p style="color: var(--color-black);width:30vw;">
                 <span style="color:var(--color-co2)"> Carbon Dioxide</span>
                 is largely produced by the burning of fossil fuels such
@@ -354,14 +363,14 @@
                 of deforestation, <span style="color:var(--color-co2)"> CO₂</span> is released by the decomposition of biomass during
                 the burning of mainly tropical forests.</p>
             </div>
-            <div class="step" data-step="16" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
+            <div class="step" data-step="17" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
               <p style="color: var(--color-black);width:30vw;">
                 <span style="color: var(--color-ch4)">Methane</span>
                  is always produced when organic material is decomposed in the
                 absence of oxygen. This occurs mainly in the stomachs of ruminants
                 (cows and sheep), in wet rice cultivation and in landfills.</p>
             </div>
-            <div class="step" data-step="17" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
+            <div class="step" data-step="18" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
               <p style="color: var(--color-black);width:30vw;">
                 <span style="color: var(--color-n2o)">Nitrous Oxide</span>
                  is produced in the soil during the decomposition of
@@ -370,7 +379,7 @@
                 leads to a significant release of <span style="color:var(--color-co2)"> CO₂</span> and <span style="color: var(--color-n2o)">Nitrous Oxide</span>.
               </p>
             </div>
-            <div class="step" data-step="18" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
+            <div class="step" data-step="19" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
               <p style="color: var(--color-black);width:30vw;">
                 <span style="color: var(--color-fgas)">F-Gases</span> are mainly used as propellants and refrigerants. They contribute to the destruction of the ozone layer. The fluorocarbons (HFCs), used as substi- tutes, do not damage the ozone layer – but they are also greenhouse gases.
               </p>
