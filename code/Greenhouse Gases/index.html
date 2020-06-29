@@ -82,7 +82,7 @@
             <div class="list-part"> <div class="square" style="height:400px;margin:0;width:6px;background-color:var(--color-n2o);"></div> </div>
             <div class="list-part"> <div class="square" style="height:400px; margin:0;width:6px;background-color:var(--color-fgas);"></div> </div>
           </div>
-          <div class="divlist" style="padding-top:20vh;">
+          <div class="divlist" style="padding-top:20vh;z-index: 100;">
             <div class="boxshadowtext">
               <div class="twoboxes">
                 <div class="textlist" style="width: 25vw; text-align:left; align-items:flex-start; margin-right:8vw;">
@@ -99,85 +99,110 @@
           <figure ref="figure" style="height:auto;">
             <div class="imgback" style="align-items:center;padding:0;margin-top:0;">
               <div class="list-row" style="margin:0;">
-                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:400px;margin:0;width:6px;background-color:var(--color-co2);"></div> </div>
-                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:400px;margin:0;width:6px;background-color:var(--color-ch4);"></div> </div>
-                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:400px;margin:0;width:6px;background-color:var(--color-n2o);"></div> </div>
-                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:400px; margin:0;width:6px;background-color:var(--color-fgas);"></div> </div>
+                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:410px;margin:0;width:6px;background-color:var(--color-co2);"></div> </div>
+                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:410px;margin:0;width:6px;background-color:var(--color-ch4);"></div> </div>
+                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:410px;margin:0;width:6px;background-color:var(--color-n2o);"></div> </div>
+                <div class="list-part" style="margin-top:0;"> <div class="square" style="height:410px; margin:0;width:6px;background-color:var(--color-fgas);"></div> </div>
               </div>
               <div class="divlist">
-                <div class="boxshadowtext" style="margin-top:10vh;">
-                  <div class="textlist" style="text-align:left; align-items:flex-start;padding: 5vh 5vw 5vh 7vw;">
+                <div class="boxshadowtext" style="margin-top:12vh;">
+                  <div class="textlist" style="text-align:left; align-items:flex-start;padding: 4vh 5vw 4vh 7vw;">
                     <p-titel2> Greenhouse Gases have different Lifetimes </p-titel2>
-                    <p style="width:60vw; padding-top:4vh;"> The various gases differ significantly. For example: They remain in the atmosphere for different periods of time, and therefore affect the climate on very different timescales – from years to millennia.  </p>
+                    <p style="width:60vw; padding-top:3vh;"> The time the various gases stay in the athmosphere differ significantly, they remain for different periods of time, and therefore affect the climate on very different timescales – from years to millennia.
+                      While the lifetime varies, the greenhouse gases are not completely gone after these years. <span style="color:var(--color-n2o)">Nitrous Oxide</span> is destroyed through chemical reactions, many <span style="color:var(--color-fgas)"> F-Gases</span> can only be removed by sunlight in the upper athmosphere. <span style="color:var(--color-ch4)"> Methane</span> is degraded to water and <span style="color:var(--color-co2)"> CO₂</span>. And <span style="color:var(--color-co2)"> CO₂</span> is taken up by the oceans and also extracted by plants and trees through photosynthesis. </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="list-row" v-if="step === 0">
-              <div class="list-part"> <img src="../assets/images/time/time0y-1.svg"> </div>
-              <div class="list-part"> <img src="../assets/images/time/time0y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time0y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time0y-4.svg">  </div>
-            </div>
-            <div class="list-row" v-if="step === 1">
-              <div class="list-part"> <img src="../assets/images/time/time1y-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time1y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time1y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time1y-4.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;" v-if="step === 2">
-              <div class="list-part"> <img src="../assets/images/time/time5y-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time5y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time5y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time5y-4.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;" v-if="step === 3">
-              <div class="list-part"> <img src="../assets/images/time/time10y-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time10y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time10y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time10y-4.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;" v-if="step === 4">
-              <div class="list-part"> <img src="../assets/images/time/time20y-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time20y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time20y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time20y-4.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;" v-if="step === 5">
-              <div class="list-part"> <img src="../assets/images/time/time50y-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time50y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time50y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time50y-4.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;" v-if="step === 6">
-              <div class="list-part"> <img src="../assets/images/time/time100y-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time100y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time100y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time100y-4.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;" v-if="step === 7">
-              <div class="list-part"> <img src="../assets/images/time/time200y-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time200y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time200y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time200y-4.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;" v-if="step === 8">
-              <div class="list-part"> <img src="../assets/images/time/time500y-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time500y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time500y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time500y-4.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;" v-if="step === 9">
-              <div class="list-part"> <img src="../assets/images/time/time1000y-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time1000y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time1000y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time1000y-4.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;" v-if="step === 10">
-              <div class="list-part"> <img src="../assets/images/time/time2000y-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time2000y-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time2000y-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/time/time2000y-4.svg">  </div>
+            <div class="transition-wrapper">
+              <transition name="fade">
+                <div class="list-row" v-if="step === 0">
+                    <div class="list-part"> <img src="../assets/images/time/time0y-1.svg"> </div>
+                    <div class="list-part"> <img src="../assets/images/time/time0y-2.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/time/time0y-3.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/time/time0y-4.svg">  </div>
+                </div>
+              </transition>
+              <transition name="fade">
+              <div class="list-row" v-if="step === 1">
+                <div class="list-part"> <img src="../assets/images/time/time1y-1.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time1y-2.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time1y-3.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time1y-4.svg">  </div>
+              </div>
+            </transition>
+            <transition name="fade">
+              <div class="list-row" style="align-items: flex-start;" v-if="step === 2">
+                <div class="list-part"> <img src="../assets/images/time/time5y-1.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time5y-2.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time5y-3.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time5y-4.svg">  </div>
+              </div>
+            </transition>
+            <transition name="fade">
+              <div class="list-row" style="align-items: flex-start;" v-if="step === 3">
+                <div class="list-part"> <img src="../assets/images/time/time10y-1.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time10y-2.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time10y-3.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time10y-4.svg">  </div>
+              </div>
+            </transition>
+            <transition name="fade">
+              <div class="list-row" style="align-items: flex-start;" v-if="step === 4">
+                <div class="list-part"> <img src="../assets/images/time/time20y-1.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time20y-2.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time20y-3.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time20y-4.svg">  </div>
+              </div>
+            </transition>
+            <transition name="fade">
+              <div class="list-row" style="align-items: flex-start;" v-if="step === 5">
+                <div class="list-part"> <img src="../assets/images/time/time50y-1.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time50y-2.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time50y-3.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time50y-4.svg">  </div>
+              </div>
+            </transition>
+            <transition name="fade">
+              <div class="list-row" style="align-items: flex-start;" v-if="step === 6">
+                <div class="list-part"> <img src="../assets/images/time/time100y-1.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time100y-2.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time100y-3.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time100y-4.svg">  </div>
+              </div>
+            </transition>
+            <transition name="fade">
+              <div class="list-row" style="align-items: flex-start;" v-if="step === 7">
+                <div class="list-part"> <img src="../assets/images/time/time200y-1.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time200y-2.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time200y-3.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time200y-4.svg">  </div>
+              </div>
+            </transition>
+            <transition name="fade">
+              <div class="list-row" style="align-items: flex-start;" v-if="step === 8">
+                <div class="list-part"> <img src="../assets/images/time/time500y-1.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time500y-2.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time500y-3.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time500y-4.svg">  </div>
+              </div>
+            </transition>
+            <transition name="fade">
+              <div class="list-row" style="align-items: flex-start;" v-if="step === 9">
+                <div class="list-part"> <img src="../assets/images/time/time1000y-1.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time1000y-2.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time1000y-3.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time1000y-4.svg">  </div>
+              </div>
+            </transition>
+            <transition name="fade">
+              <div class="list-row" style="align-items: flex-start;" v-if="step === 10">
+                <div class="list-part"> <img src="../assets/images/time/time2000y-1.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time2000y-2.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time2000y-3.svg">  </div>
+                <div class="list-part"> <img src="../assets/images/time/time2000y-4.svg">  </div>
+              </div>
+            </transition>
             </div>
 
           </figure>
@@ -218,7 +243,7 @@
           </article>
         </div>
 
-        <div class="text-list" style="align-items:center;">
+        <div class="text-list" style="align-items:center; margin-top:30vh;">
           <p style="text-align:center;">The gases also do not contribute to the greenhouse effect to the same extent. <br> But how can we compare their impact? </p>
           <img style="margin:5vh 0 10vh 0;transform: rotate(180deg);" src="../assets/images/arrow-up.svg">
         </div>
@@ -238,36 +263,66 @@
 
         <div class="scrolly">
           <figure ref="figure" style="height:80vh;">
-            <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 11">
-              <div class="list-part"> <img src="../assets/images/co2eq/co2-0.svg"> </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/ch4-0.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/n2o-0.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/fgas-0.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 12">
-              <div class="list-part"> <img src="../assets/images/co2eq/co2-1.svg"> </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/ch4-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/n2o-1.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/fgas-1.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 13">
-              <div class="list-part"> <img src="../assets/images/co2eq/co2-2.svg"> </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/ch4-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/n2o-2.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/fgas-2.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 14">
-              <div class="list-part"> <img src="../assets/images/co2eq/co2-3.svg"> </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/ch4-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/n2o-3.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/fgas-3.svg">  </div>
-            </div>
-            <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 15">
-              <div class="list-part"> <img src="../assets/images/co2eq/co2-4.svg"> </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/ch4-4.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/n2o-4.svg">  </div>
-              <div class="list-part"> <img src="../assets/images/co2eq/fgas-4.svg">  </div>
-            </div>
+              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center; height:15vh;margin-top: 12vh;" v-if="step === 11">
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide </p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane </p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide </p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases </p-titel3></div>
+              </div>
+                  <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 11">
+                    <div class="list-part"> <img src="../assets/images/co2eq/co2-0-a.svg"> </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/ch4-0.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/n2o-0.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/fgas-0.svg">  </div>
+                  </div>
+              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 12">
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide <br> ≙ <br> 1kg CO₂eq</p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane </p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide </p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases </p-titel3></div>
+              </div>
+                  <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 12">
+                    <div class="list-part"> <img src="../assets/images/co2eq/co2-1.svg"> </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/ch4-1.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/n2o-1.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/fgas-1.svg">  </div>
+                  </div>
+              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 13">
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide <br> ≙ <br> 1kg CO₂eq</p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane <span style="color: var(--color-co2)"><br> ≙ <br> 28kg CO₂eq</span></p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide </p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases </p-titel3></div>
+              </div>
+                  <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 13">
+                    <div class="list-part"> <img src="../assets/images/co2eq/co2-2.svg"> </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/ch4-2.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/n2o-2.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/fgas-2.svg">  </div>
+                  </div>
+              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 14">
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide <br> ≙ <br> 1kg CO₂eq</p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane <span style="color: var(--color-co2)"><br> ≙ <br> 28kg CO₂eq</span></p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide <span style="color: var(--color-co2)"><br> ≙ <br> 289kg CO₂eq</span></p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases </p-titel3></div>
+              </div>
+                  <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 14">
+                    <div class="list-part"> <img src="../assets/images/co2eq/co2-3.svg"> </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/ch4-3.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/n2o-3.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/fgas-3.svg">  </div>
+                  </div>
+              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 15">
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide <br> ≙ <br> 1kg CO₂eq</p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane <span style="color: var(--color-co2)"><br> ≙ <br> 28kg CO₂eq</span></p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide <span style="color: var(--color-co2)"><br> ≙ <br> 289kg CO₂eq</span></p-titel3></div>
+                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases <span style="color: var(--color-co2)"><br> ≙ <br> 12400–23500kg CO₂eq</span></p-titel3></div>
+              </div>
+                  <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 15">
+                    <div class="list-part"> <img src="../assets/images/co2eq/co2-4.svg"> </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/ch4-4.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/n2o-4.svg">  </div>
+                    <div class="list-part"> <img src="../assets/images/co2eq/fgas-4.svg">  </div>
+                  </div>
           </figure>
           <article>
             <div class="step" data-step="11" style="background:none;height:40vh">
@@ -508,7 +563,7 @@
             <div class="imgback" style="justify-content: normal;">
               <div class="list-row" style="margin-bottom:0; align-items:flex-end;">
                 <div class="list-part"> <img src="../assets/images/global/ges.2.2-1.svg"></div>
-                <div class="list-part"> <img src="../assets/images/global/ges.2.2-2.svg"></div>
+                <div class="list-part"> <img src="../assets/images/co2eq/co2-0-a.svg"> </div>
                 <div class="list-part"> <img src="../assets/images/global/ges.2.2-3.svg"></div>
                 <div class="list-part"> <img src="../assets/images/global/ges.2.2-4.svg"></div>
               </div>
