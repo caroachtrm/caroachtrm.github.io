@@ -198,13 +198,6 @@ p-titel2 {
   line-height: 150%;
 }
 
-p-titel3 {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-size:17px;
-  line-height: 150%;
-}
 p-typewriter {
   font-family: 'Roboto Mono';
   font-style: normal;
@@ -339,17 +332,6 @@ section.intro {
   padding: 2vh 2vw 2vh 2vw;
   margin-bottom: 5vh;
   border-radius: 3px;
-}
-
-.borderbox {
-  height: auto;
-  width: 20vw;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  border: 2px solid #F6F6F6;;
-  border-radius: 3px;
-  padding: 2vh 2vw 2vh 2vw;
 }
 
 section.scrolly {
@@ -539,8 +521,6 @@ a{
  100% {left: 0; top:0; transform: rotate(0deg);}
 }
 
-
-
 article {
   width: 100%;
   display: flex;
@@ -632,17 +612,7 @@ text {
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s;
-  transition-timing-function: linear;
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;
-}
-
-.transition-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.transition-wrapper .list-row {
-  position: absolute;
 }
