@@ -20,8 +20,8 @@
     type='text/css'>
 </head>
 
-<body>
-  <div class="warning" scroll="no" style="overflow: hidden"> <p style="z-index:300;width:80vw; margin-top:45vh; background-color:rgba(0, 199, 165, 0.25);padding:2vh 0 2vh 0;"> This website only works on a display with a width of 1200px (or larger).</p></div>
+<body style="overflow-x: hidden">
+  <div class="warning" scroll="no" style="overflow: hidden"> <p style="z-index:300;width:100%; margin-top:45vh; background-color:rgba(0, 199, 165, 0.25);padding:2vh 0 2vh 0;"> This website only works on a display with a width of 1200px (or larger).</p></div>
   <div id="app">
 
     <header></header>
@@ -108,7 +108,7 @@
                 <div class="boxshadowtext" style="margin-top:10vh;">
                   <div class="textlist" style="text-align:left; align-items:flex-start;padding: 4vh 5vw 4vh 7vw;">
                     <p-titel2> Greenhouse Gases have different Lifetimes </p-titel2>
-                    <p style="width:60vw; padding-top:3vh;"> The IPCC Third Assessment Report defines a gas’s lifetime as the amount of the gas in the atmosphere divided by the rate at which it is removed from the atmosphere. The time the human made greenhouse gases stay in the atmosphere differ significantly. They remain for different periods of time, and therefore affect the climate on very different timescales – from years to millennia. While the lifetime varies, the greenhouse gases do not simply dissolve, but are eliminated by various processes. --> </p>
+                    <p style="width:60vw; padding-top:3vh;"> The IPCC Third Assessment Report defines a gas’s lifetime as the amount of the gas in the atmosphere divided by the rate at which it is removed from the atmosphere. The time the human made greenhouse gases stay in the atmosphere differ significantly. They remain for different periods of time, and therefore affect the climate on very different timescales – from years to millennia. While the lifetime varies, the greenhouse gases do not simply dissolve, but are eliminated by various processes. </p>
                   </div>
                 </div>
               </div>
@@ -236,13 +236,10 @@
             <div class="step" data-step="9" style="background:none; width:100%;height:20vh;">
               <p-2>2000 <br>YEARS</p-2>
             </div>
-            <div class="step" data-step="10" style="background:none; ">
-              <p-2></p-2>
-            </div>
           </article>
         </div>
 
-        <div class="text-list" style="align-items:center; margin-top:30vh;">
+        <div class="text-list" style="align-items:center; margin-top:40vh;">
           <p style="text-align:center;">The gases also do not contribute to the greenhouse effect to the same extent. <br> But how can we compare their impact? </p>
           <img style="margin:5vh 0 10vh 0;transform: rotate(180deg);" src="../assets/images/arrow-up.svg">
         </div>
@@ -262,68 +259,71 @@
 
         <div class="scrolly">
           <figure ref="figure" style="height:80vh;">
-              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center; height:15vh;margin-top: 12vh;" v-if="step === 11">
+              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center; height:15vh;margin-top: 12vh;" v-if="step === 10">
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide </p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane </p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide </p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases </p-titel3></div>
               </div>
-                  <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 11">
-                    <div class="list-part"> <img src="../assets/images/co2eq/co2-0-a.svg"> </div>
+                  <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 10">
+                    <div class="list-part"> <img style="height:104px;" src="../assets/images/co2eq/co2-0-a.svg"> </div>
                     <div class="list-part"> <img src="../assets/images/co2eq/ch4-0.svg">  </div>
                     <div class="list-part"> <img src="../assets/images/co2eq/n2o-0.svg">  </div>
                     <div class="list-part"> <img src="../assets/images/co2eq/fgas-0.svg">  </div>
                   </div>
-              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 12">
+              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 11">
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide <br> ≙ <br> 1kg CO₂eq</p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane </p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide </p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases </p-titel3></div>
               </div>
-                  <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 12">
+                  <div class="list-row" style="align-items: flex-start; height:50vh;"v-if="step === 11">
                     <div class="list-part"> <img src="../assets/images/co2eq/co2-1.svg"> </div>
-                    <div class="list-part"> <img src="../assets/images/co2eq/ch4-1.svg">  </div>
+                    <div class="list-part"> <img style="height:104px;" src="../assets/images/co2eq/ch4-1-a.svg">  </div>
                     <div class="list-part"> <img src="../assets/images/co2eq/n2o-1.svg">  </div>
                     <div class="list-part"> <img src="../assets/images/co2eq/fgas-1.svg">  </div>
                   </div>
-              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 13">
+              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 12">
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide <br> ≙ <br> 1kg CO₂eq</p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane <span style="color: var(--color-co2)"><br> ≙ <br> 28kg CO₂eq</span></p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide </p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases </p-titel3></div>
               </div>
-                  <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 13">
+                  <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 12">
                     <div class="list-part"> <img src="../assets/images/co2eq/co2-2.svg"> </div>
-                    <div class="list-part"> <img src="../assets/images/co2eq/ch4-2.svg">  </div>
-                    <div class="list-part"> <img src="../assets/images/co2eq/n2o-2.svg">  </div>
+                    <div class="list-part"> <img style="height:115px;" src="../assets/images/co2eq/ch4-2-a.svg">  </div>
+                    <div class="list-part"> <img style="height:104px;" src="../assets/images/co2eq/n2o-2-a.svg"> </div>
                     <div class="list-part"> <img src="../assets/images/co2eq/fgas-2.svg">  </div>
                   </div>
-              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 14">
+              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 13">
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide <br> ≙ <br> 1kg CO₂eq</p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane <span style="color: var(--color-co2)"><br> ≙ <br> 28kg CO₂eq</span></p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide <span style="color: var(--color-co2)"><br> ≙ <br> 289kg CO₂eq</span></p-titel3></div>
                 <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases </p-titel3></div>
               </div>
-                  <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 14">
+                  <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 13">
                     <div class="list-part"> <img src="../assets/images/co2eq/co2-3.svg"> </div>
                     <div class="list-part"> <img src="../assets/images/co2eq/ch4-3.svg">  </div>
-                    <div class="list-part"> <img src="../assets/images/co2eq/n2o-3.svg">  </div>
-                    <div class="list-part"> <img src="../assets/images/co2eq/fgas-3.svg">  </div>
+                    <div class="list-part"> <img style="height:345px;" src="../assets/images/co2eq/n2o-3-a.svg">  </div>
+                    <div class="list-part"> <img style="height:104px;" src="../assets/images/co2eq/fgas-3-a.svg">  </div>
                   </div>
-              <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 15">
-                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide <br> ≙ <br> 1kg CO₂eq</p-titel3></div>
-                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane <span style="color: var(--color-co2)"><br> ≙ <br> 28kg CO₂eq</span></p-titel3></div>
-                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide <span style="color: var(--color-co2)"><br> ≙ <br> 289kg CO₂eq</span></p-titel3></div>
-                <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases <span style="color: var(--color-co2)"><br> ≙ <br> 12400–23500kg CO₂eq</span></p-titel3></div>
-              </div>
-                  <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 15">
-                    <div class="list-part"> <img src="../assets/images/co2eq/co2-4.svg"> </div>
-                    <div class="list-part"> <img src="../assets/images/co2eq/ch4-4.svg">  </div>
-                    <div class="list-part"> <img src="../assets/images/co2eq/n2o-4.svg">  </div>
-                    <div class="list-part"> <img src="../assets/images/co2eq/fgas-4.svg">  </div>
+                  <div class="list-row" style="margin-bottom: 1vh; align-items: flex-start; text-align: center;height:15vh;margin-top: 12vh;" v-if="step === 14">
+                    <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-co2)"> 1kg Carbon Dioxide <br> ≙ <br> 1kg CO₂eq</p-titel3></div>
+                    <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-ch4)"> 1kg Methane <span style="color: var(--color-co2)"><br> ≙ <br> 28kg CO₂eq</span></p-titel3></div>
+                    <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-n2o)"> 1kg Nitrous Oxide <span style="color: var(--color-co2)"><br> ≙ <br> 289kg CO₂eq</span></p-titel3></div>
+                    <div class="list-part" style="margin: 2vh 0 0 0;"><p-titel3 style="color: var(--color-fgas)"> 1kg F-Gases <span style="color: var(--color-co2)"><br> ≙ <br> 12400–23500kg CO₂eq</p-titel3></div>
                   </div>
+                      <div class="list-row" style="align-items: flex-start;height:50vh;" v-if="step === 14">
+                        <div class="list-part"> <img src="../assets/images/co2eq/co2-4.svg"> </div>
+                        <div class="list-part"> <img src="../assets/images/co2eq/ch4-4.svg">  </div>
+                        <div class="list-part"> <img src="../assets/images/co2eq/n2o-4.svg">  </div>
+                        <div class="list-part"> <img style="height:495px;" src="../assets/images/co2eq/fgas-4-a.svg">  </div>
+                      </div>
           </figure>
           <article>
+            <div class="step" data-step="10" style="background:none;height:40vh">
+              <p-2></p-2>
+            </div>
             <div class="step" data-step="11" style="background:none;height:40vh">
               <p-2></p-2>
             </div>
@@ -336,13 +336,10 @@
             <div class="step" data-step="14" style="background:none;height:40vh">
               <p-2></p-2>
             </div>
-            <div class="step" data-step="15" style="background:none;height:40vh">
-              <p-2></p-2>
-            </div>
           </article>
         </div>
 
-      <div class="imgback" style="margin-top:18.5vh;">
+      <div class="imgback" style="margin-top:21.7vh;">
         <img class="img-right" src="../assets/images/bobbel_background.svg">
         <div class="divlist">
           <div class="boxtext" style="background: rgba(255, 255, 255, 0.6);border-radius: 5px;padding:2vh 2vw 2vh 2vw; margin-bottom:80vh;">
@@ -394,33 +391,29 @@
             <div class="list-part"> <img src="../assets/images/fgas-ges.svg">  </div>
           </div>
       <div class="divlist">
-        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin:160vh 0 100vh 20vw;">
-            <div class="square" style="height:70px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
-            <p style="width:25vw;"> A lot of the human-made, or “anthropogenic”, <span style="color:var(--color-co2)"> CO₂</span> emissions come from everyday activities that we don’t even think about.</p>
+        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin:100vh 0 100vh 0;">
+            <div class="square" style="height:50px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
+            <p style="width:25vw;"> A lot of the human-made <span style="color:var(--color-co2)"> CO₂</span> emissions come from everyday activities.</p>
         </div>
-        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin-bottom:170vh;">
-            <div class="square" style="height:70px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
-            <p style="width:25vw;"> Did you turn on the lights this morning? Or are you reading this on your fully-charged laptop? Did you ride in a car or bus today?</p>
+        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin-bottom:180vh;">
+            <div class="square" style="height:100px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
+            <p style="width:35vw;"> Did you turn on the lights this morning? Or are you reading this on your fully-charged laptop? Did you ride in a car or bus today? Have you had your vegetables or fruits? And did you pull those out of your refrigerator?</p>
         </div>
-        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin-bottom:170vh;">
-            <div class="square" style="height:70px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
-            <p style="width:25vw;"> Or how about eating? Have you had your vegetables or fruits? And did you pull those out of your refrigerator?</p>
-        </div>
-        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin-bottom:170vh;margin-left:20vw;">
+        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin-bottom:180vh;">
             <div class="square" style="height:90px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
-            <p style="width:25vw;"> Power generation is a major contributor to human-made <span style="color:var(--color-co2)"> CO₂</span> emissions - and in fact, electric power generation is the greatest source of <span style="color:var(--color-co2)"> CO₂</span> to the atmosphere.</p>
+            <p style="width:25vw;"> Power generation is a major contributor to human-made <span style="color:var(--color-co2)"> CO₂</span> emissions and in fact, electric power generation is the greatest source of <span style="color:var(--color-co2)"> CO₂</span> to the atmosphere.</p>
         </div>
-        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin-bottom:170vh;">
+        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin-bottom:180vh;">
             <div class="square" style="height:120px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
-            <p style="width:35vw;"> But it’s nearly impossible to avoid generating <span style="color:var(--color-co2)"> CO₂</span>. Transportation, industry, agricultural practices… these are all activities that usually burn fossil fuels to function. And as we all know, burning fossil fuels like coal, oil, and natural gas will lead to increased <span style="color:var(--color-co2)"> CO₂</span> emissions as a byproduct.</p>
+            <p style="width:35vw;"> It’s nearly impossible to avoid generating <span style="color:var(--color-co2)"> CO₂</span>: Transportation, industryand agricultural practices are all activities that usually burn fossil fuels to function. Burning fossil fuels like coal, oil and natural gas will lead to increased <span style="color:var(--color-co2)"> CO₂</span> emissions as a byproduct.</p>
         </div>
-        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin-bottom:170vh;margin-left:20vw;">
-            <div class="square" style="height:120px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
-            <p style="width:35vw;"> Now, this isn’t meant to make anyone feel guilty about the <span style="color:var(--color-co2)"> CO₂</span> emissions they might be causing. In today’s world, we can all do our best (and should), but fossil fuels are incredibly common, and it’s often impossible to account for all the fossil fuels that are burned that are out of our control. </p>
+        <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin-bottom:180vh;">
+            <div class="square" style="height:100px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
+            <p style="width:35vw;"> Our dependence on fossil fuels as an energy source is tied to the fact that they are relatively cheaper to extract and use compared with other sources. But this ongoing dependence carries with it serious environmental effects. </p>
         </div>
         <div class="boxtext" style="background: rgba(0, 199, 165, 0.1);border-radius: 5px;padding:2vh 2vw 2vh 2vw;margin-bottom:50vh;">
-            <div class="square" style="height:50px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
-            <p style="width:25vw;">But it is important to be aware of how our daily activities affect the environment.</p>
+            <div class="square" style="height:120px;margin: 0 1vw 0 0;background-color:var(--color-co2);"></div>
+            <p style="width:35vw;">If things continue the way they do at present, the next generation could see the global climate becoming inhospitable for human life. This is why we have to move away from fossil fuels to more renewable and sustainable energy sources, e.g. solar-, wind- and hydropower energy. </p>
         </div>
       </div>
         </div>
@@ -435,13 +428,13 @@
               <div class="text-list" style="width: auto; margin-top:1vh 0 8vh 0;">
                 <p-titel2 style="color: var(--color-black); text-align:left; padding-right:10vw;"> The origin of human-made Greenhouse Gases </p-titel2>
                 </div>
-            <img v-if="step === 16" src="../assets/images/Frame 1.svg"/>
-            <img v-if="step === 17" src="../assets/images/Frame 2.svg"/>
-            <img v-if="step === 18" src="../assets/images/Frame 3.svg"/>
-            <img v-if="step === 19" src="../assets/images/Frame 4.svg"/>
+            <img v-if="step === 15" src="../assets/images/Frame 1.svg"/>
+            <img v-if="step === 16" src="../assets/images/Frame 2.svg"/>
+            <img v-if="step === 17" src="../assets/images/Frame 3.svg"/>
+            <img v-if="step === 18" src="../assets/images/Frame 4.svg"/>
           </figure>
           <article style="margin: 0 0 0 0;">
-            <div class="step" data-step="16" style="padding: 1vh 1vw 1vh 1vw;margin: 0 0 20vh 5vw;">
+            <div class="step" data-step="15" style="padding: 1vh 1vw 1vh 1vw;margin: 0 0 20vh 5vw;">
               <p style="color: var(--color-black);width:30vw;">
                 <span style="color:var(--color-co2)"> Carbon Dioxide</span>
                 is largely produced by the burning of fossil fuels such
@@ -450,14 +443,14 @@
                 of deforestation, <span style="color:var(--color-co2)"> CO₂</span> is released by the decomposition of biomass during
                 the burning of mainly tropical forests.</p>
             </div>
-            <div class="step" data-step="17" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
+            <div class="step" data-step="16" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
               <p style="color: var(--color-black);width:30vw;">
                 <span style="color: var(--color-ch4)">Methane</span>
                  is always produced when organic material is decomposed in the
                 absence of oxygen. This occurs mainly in the stomachs of ruminants
                 (cows and sheep), in wet rice cultivation and in landfills.</p>
             </div>
-            <div class="step" data-step="18" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
+            <div class="step" data-step="17" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
               <p style="color: var(--color-black);width:30vw;">
                 <span style="color: var(--color-n2o)">Nitrous Oxide</span>
                  is produced in the soil during the decomposition of
@@ -466,7 +459,7 @@
                 leads to a significant release of <span style="color:var(--color-co2)"> CO₂</span> and <span style="color: var(--color-n2o)">Nitrous Oxide</span>.
               </p>
             </div>
-            <div class="step" data-step="19" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
+            <div class="step" data-step="18" style="padding: 1vh 1vw 1vh 1vw;margin: 20vh 0 20vh 0;">
               <p style="color: var(--color-black);width:30vw;">
                 <span style="color: var(--color-fgas)">F-Gases</span> are mainly used as propellants and refrigerants. They contribute to the destruction of the ozone layer. The fluorocarbons (HFCs), used as substi- tutes, do not damage the ozone layer – but they are also greenhouse gases.
               </p>
@@ -516,7 +509,7 @@
                     <p style="padding-top:2vh;">According to the IPCC, it is now important to rapidly reduce net emissions of greenhouse gases and to bring them down to zero worldwide until 2050 at the latest in order to restrict global warming to the 2 °C limit. This limit is a political setting based on scientific evidence about the likely consequences of global warming. </p>
                       <div class="boxtext" style="padding-top:4vh;margin:0;justify-content: normal;">
                           <div class="square" style="height:60px;margin: 0 1vw 0 0;background-color:var(--color-black);"></div>
-                          <p-titel2 style="width:50vw;"> Let's use our learning to find solutions to keep global warming well below 2°C. </p-titel2>
+                          <p-titel2 style="width:50vw;"> Let's use our learnings to find solutions so <br> we can keep global warming well below 2°C. </p-titel2>
                       </div>
                     <p style="padding-top:4vh;"> To get more insights about connected topics, you can follow the links below:</p>
                   </div>
@@ -575,6 +568,9 @@
             <p> GEOlino: <a href="https://www.geo.de/geolino/natur-und-umwelt/15385-rtkl-klimawandel-wie-kohlendioxid-das-klima-veraendert">Unser Klima, Wie Kohlendioxid unser Klima verändert</a>, 2016</p>
             <p> World Resources Institute: <a href="https://www.wri.org/blog/2020/02/greenhouse-gas-emissions-by-country-sector">Greenhouse gas emissions by country sector</a>, 2020</p>
             <p> Bundesministerium für Umwelt, Naturschutz und nukleare Sicherheit (BMU): <a href="https://www.kaeltemittel-info.de/informationen/allgemeine-informationen/emissionen-fluorierter-treibhausgase/"><br>Emissionen fluorierter Treibhausgase</a></p>
+            <p> sustainability.energy: <a href="https://sustainability.energy/effects-fossil-fuels-environment/">Effects of Fossil Fuels on the Environment</a></p>
+            <p> United States Environmental Protection Agency: <a href="https://www.epa.gov/ghgemissions/overview-greenhouse-gases">Overview of Greenhouse Gases</a></p>
+            <p> Scientists for Future: <a href="https://www.scientists4future.org/stellungnahme/">Stellungnahme</a></p>
             <div class="boxtext" style="justify-content:flex-start;margin:2vh 0 2vh 0;">
               <div class="text-list" style="width:15vw;">
                   <p-2 style="color:var(--color-accent2);"> COURSE </p-2>
