@@ -32,6 +32,7 @@
 @media screen and (min-width: 1200px) {
   .warning {
     display: none;
+    overflow: hidden;
   }
 }
 
@@ -261,8 +262,9 @@ section.intro {
   display: flex;
   flex-direction: column;
   text-align:left;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   margin-top: 4vh;
   margin-bottom: 4vh;
   align-items:center;
@@ -471,75 +473,125 @@ a{
 }
 
 .dot1 {
-  width: 15px;
-  height: 15px;
-  background: #00C7A5;
-  border-radius: 50%;
-  margin-bottom: 2vh;
-  position: relative;
-  animation: dot1 7s infinite;
-  animation-timing-function: linear;
+  animation: xAxis 7s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
 }
 
-@keyframes dot1 {
-  0% {left: 7px; top:13px;}
-  10%{left: -5px; top:16px;}
-  20%{left: -2px; top:18px;}
-  30%{left: 10px; top:24px;}
-  40%{left: 12px; top:16px;}
-  50%{left: 6px; top:12px;}
-  60%{left: -2px; top:18px;}
-  70%{left: 5px; top:22px;}
-  80%{left: 10px; top:25px;}
-  90%{left: 12px; top:18px;}
-  100%{left: 7px; top:13px;}
+.dot1::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: var(--color-co2);
+  animation: yAxis 4s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+}
+
+@keyframes yAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(20px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@keyframes xAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateX(30px);
+  }
 }
 
 .dot2 {
-  width: 15px;
-  height: 15px;
-  background: #00C7A5;
-  border-radius: 50%;
-  margin-bottom: 2vh;
-  position: relative;
-  animation: dot2 7s infinite;
-  animation-timing-function: linear;
+  animation: xAxis 7s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+  animation-delay: 2s;
 }
 
-@keyframes dot2 {
-  0% {left: 12px; top:20px;}
-  10%{left: 17px; top:24px;}
-  20%{left: 15px; top:18px;}
-  30%{left: 9px; top:16px;}
-  40%{left: 5px; top:12px;}
-  50%{left: 7px; top:10px;}
-  60%{left: 10px; top:14px;}
-  70%{left: 12px; top:10px;}
-  80%{left: 6px; top:19px;}
-  90%{left: 8px; top:26px;}
-  100%{left: 12px; top:20px;}
+.dot2::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: var(--color-ch4);
+  animation: yAxis 5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  animation-delay: 2s;
+}
+
+@keyframes yAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(-40px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@keyframes xAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateX(30px);
+  }
 }
 
 .dot3 {
+  animation: xAxis 7s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+}
+
+.dot3::after {
+  content: '';
+  display: block;
   width: 15px;
   height: 15px;
-  background: #00C7A5;
-  border-radius: 50%;
-  margin-bottom: 2vh;
-  position: relative;
-  animation: dot3 7s infinite;
-  animation-timing-function: ease-in-out;
+  border-radius: 20px;
+  background-color: var(--color-n2o);
+  animation: yAxis 5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
 }
 
-@keyframes dot3 {
-  0% {left: 0px; top: 0; transform: rotate(0deg);}
- 30% {left: 14px; top:3px; transform: rotate(40deg);}
- 50% {left: 5px; top: 8px; transform: rotate(180deg);}
- 70% {left: 16px; top: 2px; transform: rotate(90deg);}
- 100% {left: 0; top:0; transform: rotate(0deg);}
+@keyframes yAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(-30px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
+@keyframes xAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateX(-20px);
+  }
+}
 
+.dot4 {
+  animation: xAxis 7s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+  animation-delay: 2s;
+}
+
+.dot4::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: var(--color-fgas);
+
+  animation: yAxis 7s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  animation-delay: 2s;
+}
+
+@keyframes yAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@keyframes xAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateX(-10px);
+  }
+}
 
 article {
   width: 100%;
