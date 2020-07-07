@@ -32,6 +32,7 @@
 @media screen and (min-width: 1200px) {
   .warning {
     display: none;
+    overflow: hidden;
   }
 }
 
@@ -261,8 +262,9 @@ section.intro {
   display: flex;
   flex-direction: column;
   text-align:left;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   margin-top: 4vh;
   margin-bottom: 4vh;
   align-items:center;
@@ -483,15 +485,15 @@ a{
 
 @keyframes dot1 {
   0% {left: 7px; top:13px;}
-  10%{left: -5px; top:16px;}
-  20%{left: -2px; top:18px;}
-  30%{left: 10px; top:24px;}
-  40%{left: 12px; top:16px;}
+  10%{left: -1px; top:16px;}
+  20%{left: 2px; top:18px;}
+  30%{left: 8px; top:24px;}
+  40%{left: 10px; top:16px;}
   50%{left: 6px; top:12px;}
-  60%{left: -2px; top:18px;}
+  60%{left: 2px; top:18px;}
   70%{left: 5px; top:22px;}
-  80%{left: 10px; top:25px;}
-  90%{left: 12px; top:18px;}
+  80%{left: 0px; top:25px;}
+  90%{left: 10px; top:18px;}
   100%{left: 7px; top:13px;}
 }
 
