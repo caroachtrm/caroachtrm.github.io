@@ -1,20 +1,24 @@
 Scrollytelling Code for the Greenhouse Gases Project
 
-## How damaging are the greenhouse gases?
+## Greenhouse Gases made visible
 Intro to the topic
 
-* CO2-Equivalents explained
-* The Role of F-Gases
+* Ratio of Greenhouse Gases in our Earth’s Atmosphere
+* Greenhouse Gases have different Lifetimes
 
-## The importance of dwell time
-* How many years do the gases stay in the atmosphere
+## Measuring the Impact of Greenhouse Gases using CO₂ Equivalents
+* About the CO₂ Equivalents
+* animated CO₂ Equivalents 
+* about F-Gases
 
-## Percentage of greenhouse gases in our atmosphere
-* How are the parts splited
-* Facts about the gases
+## Human-made Greenhouse Gas Emissions by Gas · Germany 2018
+* Facts about CO₂
 
 ## The origin of greenhouse gases
 
-## Worldwide comparison
+## Detailed facts about Greenhouse Gases
+
+## Conclusion
+* Linked other Projects
 
 ## References & About the Project
